@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="profile-photo">
-  <img src="{{ '/photo_2026-08-17_05-40-39.jpg' | relative_url }}"
+  <img src="{{ '/assets/images/photo_2026-08-17_05-40-39.jpg' | relative_url }}"
        alt="Mohammad Sefid">
 </div>
 
