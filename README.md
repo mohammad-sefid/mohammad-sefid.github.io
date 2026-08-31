@@ -18,7 +18,7 @@
   </a>
 
   <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/"
+  <a href="https://www.linkedin.com/in/mohammad-sefid/"
      target="_blank"
      rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
