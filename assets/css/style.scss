@@ -1,18 +1,20 @@
-/* top bar */
 #topbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  /* pushes left and right apart */
   align-items: center;
+  width: 100%;                     /* take full browser width */
   padding: 16px 24px;
   background-color: var(--bg);
   border-bottom: 1px solid var(--border);
   transition: background-color 0.3s, border-color 0.3s;
+  box-sizing: border-box;          /* ensures padding doesn't break width */
 }
 
 .topbar-left {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  flex-shrink: 0;                  /* prevents shrinking */
 }
 
 .site-title {
@@ -25,6 +27,7 @@
 .topbar-right {
   display: flex;
   align-items: center;
+  flex-shrink: 0;                  /* prevents the toggle from being squished */
 }
 
 /* re-use your existing theme-switch-container styles */
