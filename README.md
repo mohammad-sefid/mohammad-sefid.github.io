@@ -1,3 +1,33 @@
+<button class="theme-toggle" onclick="toggleTheme()">
+  🌙 Dark Mode
+</button>
+
+<script>
+function toggleTheme() {
+    document.documentElement.classList.toggle('dark-mode');
+
+    const button = document.querySelector('.theme-toggle');
+
+    if (document.documentElement.classList.contains('dark-mode')) {
+        button.innerHTML = '☀️ Light Mode';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        button.innerHTML = '🌙 Dark Mode';
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+    const savedTheme = localStorage.getItem('theme');
+    const button = document.querySelector('.theme-toggle');
+
+    if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+        button.innerHTML = '☀️ Light Mode';
+    }
+});
+</script>
+
 <!-- Profile photo -->
 <p>
   <img src="photo_2026-08-17_05-40-39.jpg"
