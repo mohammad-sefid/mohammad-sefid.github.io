@@ -48,7 +48,7 @@
       --muted: #6daedb;
     }
 
-    body.dark-mode {
+    html.dark-mode {
       --bg: #0d1117;
       --text: #c9d1d9;
       --heading: #f0f6fc;
@@ -333,13 +333,13 @@
 
         if (theme === "dark") {
 
-          document.body.classList.add("dark-mode");
+          document.documentElement.classList.add("dark-mode");
           toggle.checked = true;
           status.textContent = "Dark";
 
         } else {
 
-          document.body.classList.remove("dark-mode");
+          document.documentElement.classList.remove("dark-mode");
           toggle.checked = false;
           status.textContent = "Light";
 
