@@ -1,7 +1,3 @@
-<button class="theme-toggle" onclick="toggleTheme()">
-  🌙 Dark Mode
-</button>
-
 <script>
 function toggleTheme() {
     document.documentElement.classList.toggle('dark-mode');
