@@ -1,15 +1,39 @@
+```html
 <!doctype html>
-<html lang="en">
+<html lang="{{ site.lang | default: "en-US" }}">
 
 <head>
+  {% if site.google_analytics %}
+  <script>
+    (function(i,s,o,g,r,a,m){
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)
+      },
+      i[r].l=1*new Date();
+      a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script',
+      'https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  {% endif %}
+
   <meta charset="UTF-8">
 
   {% seo %}
 
-  <link rel="stylesheet"
-        href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 
   <style>
+    /* ============================
+       DARK / LIGHT MODE VARIABLES
+       ============================ */
 
     :root {
       --bg: #ffffff;
@@ -17,6 +41,7 @@
       --heading: #111111;
       --link: #267cb9;
       --border: #e5e5e5;
+      --card: #f5f5f5;
     }
 
     body.dark-mode {
@@ -25,14 +50,14 @@
       --heading: #f0f6fc;
       --link: #58a6ff;
       --border: #30363d;
+      --card: #161b22;
     }
 
     html,
     body {
       background-color: var(--bg) !important;
       color: var(--text) !important;
-      transition: background-color 0.3s ease,
-                  color 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -40,43 +65,25 @@
     }
 
     a {
-      color: var(--link);
+      color: var(--link) !important;
     }
 
-    .wrapper {
-      min-height: 100vh;
+    hr {
+      border-color: var(--border) !important;
     }
 
-    .profile-photo img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      margin-bottom: 20px;
-    }
-
-    .description {
-      color: #6daedb;
-      line-height: 1.6;
-    }
-
-    .social-links {
-      margin-top: 20px;
-    }
-
-    .social-links a {
-      display: inline-block;
-      margin-right: 8px;
-    }
-
-    /* ON/OFF SWITCH */
+    /* ============================
+       ON / OFF SWITCH
+       ============================ */
 
     .theme-switch-container {
       display: flex;
       align-items: center;
       gap: 10px;
-      margin: 20px 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: var(--text);
     }
 
     .theme-switch {
@@ -94,8 +101,8 @@
 
     .slider {
       position: absolute;
-      inset: 0;
       cursor: pointer;
+      inset: 0;
       background-color: #ccc;
       border-radius: 28px;
       transition: 0.3s;
@@ -108,9 +115,10 @@
       height: 22px;
       left: 3px;
       top: 3px;
-      background: white;
+      background-color: white;
       border-radius: 50%;
       transition: 0.3s;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.3);
     }
 
     .theme-switch input:checked + .slider {
@@ -121,10 +129,15 @@
       transform: translateX(24px);
     }
 
-    .theme-status {
+    .theme-label {
       font-weight: 500;
+      min-width: 70px;
     }
 
+    /* Description */
+    header p {
+      color: #6daedb !important;
+    }
   </style>
 </head>
 
@@ -132,9 +145,41 @@
 
 <div class="wrapper">
 
-  <main>
+  <header>
 
-    {{ content }}
+    {% if site.logo %}
+      <img src="{{site.logo | relative_url}}" alt="Logo" />
+    {% endif %}
+
+    <h1>
+      {% if site.logo %}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+
+    {% if site.description %}
+      <p>{{ site.description }}</p>
+    {% endif %}
+
+    {% if site.github.is_project_page %}
+      <p class="view">
+        <a href="{{ site.github.repository_url }}">
+          View the Project on GitHub
+          <small>{{ site.github.repository_nwo }}</small>
+        </a>
+      </p>
+    {% endif %}
+
+    {% if site.github.is_user_page %}
+      <p class="view">
+        <a href="{{ site.github.owner_url }}">
+          View My GitHub Profile
+        </a>
+      </p>
+    {% endif %}
+
+    <!-- DARK / LIGHT MODE SWITCH -->
 
     <div class="theme-switch-container">
 
@@ -147,51 +192,85 @@
 
       <span>🌙</span>
 
-      <span class="theme-status" id="themeStatus">
+      <span class="theme-label" id="themeStatus">
         Light
       </span>
 
     </div>
 
-  </main>
+  </header>
+
+  <section>
+
+    {{ content }}
+
+  </section>
+
+  <footer>
+    {% if site.github.is_project_page %}
+      <p>
+        This project is maintained by
+        <a href="{{ site.github.owner_url }}">
+          {{ site.github.owner_name }}
+        </a>
+      </p>
+    {% endif %}
+
+    <p>
+      Hosted on GitHub Pages
+    </p>
+  </footer>
 
 </div>
 
 <script>
 
-const toggle = document.getElementById("themeToggle");
-const status = document.getElementById("themeStatus");
+(function () {
 
-function setTheme(theme) {
+  const body = document.body;
+  const toggle = document.getElementById("themeToggle");
+  const status = document.getElementById("themeStatus");
 
-  if (theme === "dark") {
-    document.body.classList.add("dark-mode");
+  // Load saved preference
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+
+    body.classList.add("dark-mode");
     toggle.checked = true;
     status.textContent = "Dark";
+
   } else {
-    document.body.classList.remove("dark-mode");
+
+    body.classList.remove("dark-mode");
     toggle.checked = false;
     status.textContent = "Light";
+
   }
 
-  localStorage.setItem("theme", theme);
-}
+  // Switch theme
+  toggle.addEventListener("change", function () {
 
-const savedTheme = localStorage.getItem("theme") || "light";
+    if (toggle.checked) {
 
-setTheme(savedTheme);
+      body.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+      status.textContent = "Dark";
 
-toggle.addEventListener("change", function () {
+    } else {
 
-  if (toggle.checked) {
-    setTheme("dark");
-  } else {
-    setTheme("light");
-  }
+      body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+      status.textContent = "Light";
 
-});
+    }
+
+  });
+
+})();
 
 </script>
 
 </body>
 </html>
+```
