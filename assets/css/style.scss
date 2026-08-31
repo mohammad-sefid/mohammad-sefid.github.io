@@ -1,0 +1,83 @@
+```scss
+---
+---
+
+@import "{{ site.theme }}";
+
+/* =========================
+   LIGHT / DARK MODE
+   ========================= */
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #24292f;
+  --heading-color: #111111;
+  --link-color: #0969da;
+  --border-color: #d0d7de;
+  --sidebar-bg: #f6f8fa;
+  --code-bg: #f6f8fa;
+}
+
+html.dark-mode {
+  --bg-color: #0d1117;
+  --text-color: #c9d1d9;
+  --heading-color: #f0f6fc;
+  --link-color: #58a6ff;
+  --border-color: #30363d;
+  --sidebar-bg: #161b22;
+  --code-bg: #161b22;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+hr {
+  border-color: var(--border-color);
+}
+
+code,
+pre {
+  background-color: var(--code-bg);
+}
+
+blockquote {
+  border-left-color: var(--border-color);
+}
+
+/* Description */
+header p {
+  color: #6daedb;
+}
+
+/* =========================
+   THEME BUTTON
+   ========================= */
+
+.theme-toggle {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background: var(--sidebar-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.theme-toggle:hover {
+  opacity: 0.8;
+}
+```
