@@ -1,8 +1,9 @@
 <body>
 
-  <!-- ========== NEW TOP BAR (add this) ========== -->
+  <!-- ====== TOP BAR (full width) ====== -->
   <div id="topbar">
     <div class="topbar-left">
+      <!-- Only the title lives here -->
       <h1 class="site-title">{{ site.title }}</h1>
     </div>
     <div class="topbar-right">
@@ -17,9 +18,24 @@
       </div>
     </div>
   </div>
-  <!-- ========== END NEW TOP BAR ========== -->
+  <!-- ====== END TOP BAR ====== -->
 
+  <!-- NOW the wrapper starts -->
   <div class="wrapper">
+
+    <header>
+      <!-- logo and description only (no title, no toggle) -->
+    </header>
+
+    <section>
+      {{ content }}
+    </section>
+
+    <footer>...</footer>
+
+  </div>
+
+</body>
     
 <!doctype html>
 <html lang="{{ site.lang | default: 'en-US' }}">
