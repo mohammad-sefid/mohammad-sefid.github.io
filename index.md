@@ -7,11 +7,12 @@ layout: default
        alt="Mohammad Sefid">
 </div>
 
-<h1>Mohammad Sefid</h1>
+<h2>About Me</h2>
 
-<p class="description">
-  Communication Systems Graduate of Master's in Electrical and Electronics Engineering (EE),
-  Khaje Nasir Toosi University of Technology (KNTU), Tehran, Iran
+<p>
+I am a Communication Systems graduate with a Master's degree in
+Electrical and Electronics Engineering from Khaje Nasir Toosi University
+of Technology (KNTU), Tehran, Iran.
 </p>
 
 <div class="social-links">
@@ -38,3 +39,12 @@ layout: default
   </a>
 
 </div>
+
+## Research Interests
+
+- Integrated Sensing and Communication (ISAC)
+- Reconfigurable Intelligent Surfaces (RIS)
+- Cooperative NOMA (C-NOMA)
+- SWIPT
+- Wireless Communications
+- Machine Learning and AI
