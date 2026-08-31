@@ -1,36 +1,26 @@
 <body>
-  <!-- NEW TOP BAR -->
+
+  <!-- ========== NEW TOP BAR (add this) ========== -->
   <div id="topbar">
     <div class="topbar-left">
       <h1 class="site-title">{{ site.title }}</h1>
-      <!-- optional: description -->
-      <p class="site-description">{{ site.description }}</p>
     </div>
     <div class="topbar-right">
       <div class="theme-switch-container">
-        <span>☀️</span>
-        <label class="theme-switch">
+        <span aria-hidden="true">☀️</span>
+        <label class="theme-switch" aria-label="Toggle dark mode">
           <input type="checkbox" id="themeToggle">
           <span class="slider"></span>
         </label>
-        <span>🌙</span>
+        <span aria-hidden="true">🌙</span>
         <span class="theme-label" id="themeStatus">Light</span>
       </div>
     </div>
   </div>
+  <!-- ========== END NEW TOP BAR ========== -->
 
   <div class="wrapper">
-    <header>
-      <!-- keep only what you need, e.g. logo -->
-    </header>
-    <section>
-      {{ content }}
-    </section>
-    <footer>...</footer>
-  </div>
-
-  <script>/* existing toggle script */</script>
-</body>
+    
 <!doctype html>
 <html lang="{{ site.lang | default: 'en-US' }}">
 
