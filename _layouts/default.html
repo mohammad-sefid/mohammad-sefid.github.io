@@ -1,3 +1,41 @@
+<body>
+  <!-- NEW TOP BAR (full width) -->
+  <div id="topbar">
+    <div class="topbar-left">
+      <h1 class="site-title">{{ site.title }}</h1>
+      <!-- optional: site.description -->
+      <p class="site-description">{{ site.description }}</p>
+    </div>
+    <div class="topbar-right">
+      <!-- Light/Dark switch -->
+      <div class="theme-switch-container">
+        <span>☀️</span>
+        <label class="theme-switch">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider"></span>
+        </label>
+        <span>🌙</span>
+        <span class="theme-label" id="themeStatus">Light</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- existing wrapper -->
+  <div class="wrapper">
+    <header>
+      <!-- logo (if any) -->
+      {% if site.logo %}
+        <img src="{{ site.logo | relative_url }}" alt="Logo">
+      {% endif %}
+      <!-- remove the toggle from here -->
+    </header>
+    <section>
+      {{ content }}
+    </section>
+    <footer>...</footer>
+  </div>
+</body>
+
 <!doctype html>
 <html lang="{{ site.lang | default: 'en-US' }}">
 
