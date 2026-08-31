@@ -1,42 +1,3 @@
-<body>
-
-  <!-- ====== TOP BAR (full width) ====== -->
-  <div id="topbar">
-    <div class="topbar-left">
-      <!-- Only the title lives here -->
-      <h1 class="site-title">{{ site.title }}</h1>
-    </div>
-    <div class="topbar-right">
-      <div class="theme-switch-container">
-        <span aria-hidden="true">☀️</span>
-        <label class="theme-switch" aria-label="Toggle dark mode">
-          <input type="checkbox" id="themeToggle">
-          <span class="slider"></span>
-        </label>
-        <span aria-hidden="true">🌙</span>
-        <span class="theme-label" id="themeStatus">Light</span>
-      </div>
-    </div>
-  </div>
-  <!-- ====== END TOP BAR ====== -->
-
-  <!-- NOW the wrapper starts -->
-  <div class="wrapper">
-
-    <header>
-      <!-- logo and description only (no title, no toggle) -->
-    </header>
-
-    <section>
-      {{ content }}
-    </section>
-
-    <footer>...</footer>
-
-  </div>
-
-</body>
-    
 <!doctype html>
 <html lang="{{ site.lang | default: 'en-US' }}">
 
@@ -293,11 +254,37 @@
         <img src="{{ site.logo | relative_url }}" alt="Logo">
       {% endif %}
 
+      {% if site.title %}
+        <h1>{{ site.title }}</h1>
+      {% endif %}
+
       {% if site.description %}
         <p class="profile-description">
           {{ site.description }}
         </p>
       {% endif %}
+
+      <!-- LIGHT / DARK SWITCH -->
+
+      <div class="theme-switch-container">
+
+        <span aria-hidden="true">☀️</span>
+
+        <label class="theme-switch" aria-label="Toggle dark mode">
+
+          <input type="checkbox" id="themeToggle">
+
+          <span class="slider"></span>
+
+        </label>
+
+        <span aria-hidden="true">🌙</span>
+
+        <span class="theme-label" id="themeStatus">
+          Light
+        </span>
+
+      </div>
 
     </header>
 
