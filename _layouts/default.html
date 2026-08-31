@@ -1,13 +1,12 @@
 <body>
-  <!-- NEW TOP BAR (full width) -->
+  <!-- NEW TOP BAR -->
   <div id="topbar">
     <div class="topbar-left">
       <h1 class="site-title">{{ site.title }}</h1>
-      <!-- optional: site.description -->
+      <!-- optional: description -->
       <p class="site-description">{{ site.description }}</p>
     </div>
     <div class="topbar-right">
-      <!-- Light/Dark switch -->
       <div class="theme-switch-container">
         <span>☀️</span>
         <label class="theme-switch">
@@ -20,22 +19,18 @@
     </div>
   </div>
 
-  <!-- existing wrapper -->
   <div class="wrapper">
     <header>
-      <!-- logo (if any) -->
-      {% if site.logo %}
-        <img src="{{ site.logo | relative_url }}" alt="Logo">
-      {% endif %}
-      <!-- remove the toggle from here -->
+      <!-- keep only what you need, e.g. logo -->
     </header>
     <section>
       {{ content }}
     </section>
     <footer>...</footer>
   </div>
-</body>
 
+  <script>/* existing toggle script */</script>
+</body>
 <!doctype html>
 <html lang="{{ site.lang | default: 'en-US' }}">
 
