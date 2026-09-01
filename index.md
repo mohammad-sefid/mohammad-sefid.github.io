@@ -44,7 +44,7 @@ of Technology (KNTU), Tehran, Iran.
 
 - Integrated Sensing and Communication (ISAC)
 - Reconfigurable Intelligent Surfaces (RIS)
-- Cooperative NOMA (C-NOMA)
+- Cooperative Non-Orthogonal-Multiple-Access (C-NOMA)
 - Simultaneous Wireless Information and Power transfer (SWIPT)
 - Wireless Communications
 
