@@ -12,7 +12,7 @@ layout: default
 <p>
 I am a Communication Systems graduate with a Master's degree in
 Electrical and Electronics Engineering from Khaje Nasir Toosi University
-of Technology (KNTU), Tehran, Iran. My research focus is on enhancing Integrated Sensing and Communication systems assisted Reconfigurable Intelligent Surface (RIS) aided with Energy Harvested (EH) of signal.
+of Technology (KNTU), Tehran, Iran. My research focus is on enhancing Integrated Sensing and Communication (ISAC) systems assisted Reconfigurable Intelligent Surface (RIS) aided Cooperative Non-Orthogonal Multiple Access (C-NOMA) through Energy Harvested (EH) of signal.
 </p>
 
 <div class="social-links">
