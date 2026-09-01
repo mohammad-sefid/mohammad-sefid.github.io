@@ -46,4 +46,4 @@ of Technology (KNTU), Tehran, Iran.
 - Reconfigurable Intelligent Surfaces (RIS)
 - Cooperative Non-Orthogonal-Multiple-Access (C-NOMA)
 - Simultaneous Wireless Information and Power transfer (SWIPT)
-- Deep Reinforcement Learning (DRL) algorithms
+- Deep Reinforcement Learning (DRL) optimization algorithms
