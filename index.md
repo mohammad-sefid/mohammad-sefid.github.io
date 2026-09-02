@@ -60,13 +60,13 @@ Duplex Modes. [In progress]
 - Estimation Theory
 - Information Theory
 
-<h2 id="Skills">Skills</h2>
+<h2 id="skills">Skills</h2>
 
 - Programming: Matlab, Python and Github
 - Writing tool: LaTeX, Microsoft Word
 - Schematic design: Microsoft Visio
 
-<h2 id="Conferences">Conferences</h2>
+<h2 id="conferences">Conferences</h2>
 
 - Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025
 Presented my research on "Applications of STAR RIS in Communication Systems"
