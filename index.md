@@ -47,3 +47,15 @@ of Technology (KNTU), Tehran, Iran. My research focus is on enhancing Integrated
 - Cooperative Non-Orthogonal-Multiple-Access (C-NOMA)
 - Simultaneous Wireless Information and Power transfer (SWIPT)
 - Deep Reinforcement Learning (DRL) optimization algorithms
+
+<h2 id="publications">Publications</h2>
+
+IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-
+Duplex Modes. [In progress]
+
+<h2 id="teaching">Teaching</h2>
+
+- Numerical Optimization
+- Stochastic Processes
+- Estimation Theory
+- Information Theory
