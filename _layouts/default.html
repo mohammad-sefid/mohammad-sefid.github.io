@@ -41,7 +41,7 @@
     :root {
       --bg: #ffffff;
       --text: #24292f;
-      --heading: #003366;
+      --heading: #003366; /* Changed to Dark Blue */
       --link: #267cb9;
       --border: #d8dee4;
       --card: #f6f8fa;
@@ -51,7 +51,7 @@
     html.dark-mode {
       --bg: #0d1117;
       --text: #c9d1d9;
-      --heading: #f0f6fc;
+      --heading: #f0f6fc; /* Kept light for readability in dark mode */
       --link: #58a6ff;
       --border: #30363d;
       --card: #161b22;
@@ -168,15 +168,17 @@
 
 
     /* =====================================================
-       LIGHT / DARK TOGGLE
+       LIGHT / DARK TOGGLE (Moved to Top Right)
        ===================================================== */
 
     .theme-switch-container {
+      position: fixed;      /* Pins the button to the screen */
+      top: 20px;            /* 20px from the top */
+      right: 20px;          /* 20px from the right */
+      z-index: 999;         /* Ensures it stays above other content */
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-top: 25px;
-      margin-bottom: 25px;
       color: var(--text);
       font-size: 14px;
     }
@@ -246,6 +248,17 @@
 
 <body>
 
+  <!-- LIGHT / DARK SWITCH MOVED HERE -->
+  <div class="theme-switch-container">
+    <span aria-hidden="true">☀️</span>
+    <label class="theme-switch" aria-label="Toggle dark mode">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider"></span>
+    </label>
+    <span aria-hidden="true">🌙</span>
+    <span class="theme-label" id="themeStatus">Light</span>
+  </div>
+
   <div class="wrapper">
 
     <header>
@@ -264,28 +277,6 @@
         </p>
       {% endif %}
 
-      <!-- LIGHT / DARK SWITCH -->
-
-      <div class="theme-switch-container">
-
-        <span aria-hidden="true">☀️</span>
-
-        <label class="theme-switch" aria-label="Toggle dark mode">
-
-          <input type="checkbox" id="themeToggle">
-
-          <span class="slider"></span>
-
-        </label>
-
-        <span aria-hidden="true">🌙</span>
-
-        <span class="theme-label" id="themeStatus">
-          Light
-        </span>
-
-      </div>
-
     </header>
 
 
@@ -298,6 +289,18 @@
       {{ content }}
 
     </section>
+
+
+    <footer>
+
+      <p>
+        Hosted on
+        <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">
+          GitHub Pages
+        </a>
+      </p>
+
+    </footer>
 
   </div>
 
