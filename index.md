@@ -60,7 +60,7 @@ Duplex Modes. [In progress]
 - Estimation Theory
 - Information Theory
 
-<h2 id="Skills">Hard Skills</h2>
+<h2 id="Skills">Skills</h2>
 
 - Programming: Matlab, Python and Github
 - Writing tool: LaTeX, Microsoft Word
