@@ -7,7 +7,7 @@ layout: default
        alt="Mohammad Sefid">
 </div>
 
-<h2 id="About Me">About Me</h2>
+<h2 id="About-Me">About Me</h2>
 
 <p>
 I am a Communication Systems graduate with a Master's degree in
@@ -40,7 +40,7 @@ of Technology (KNTU), Tehran, Iran. My research focus is on enhancing Integrated
 
 </div>
 
-<h2 id="Research Interests">Research Interests</h2>
+<h2 id="Research-Interests">Research Interests</h2>
 
 - Integrated Sensing and Communication (ISAC)
 - Reconfigurable Intelligent Surfaces (RIS)
