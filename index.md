@@ -40,6 +40,14 @@ of Technology (KNTU), Tehran, Iran. My research focus is on enhancing Integrated
 
 </div>
 
+<h2 id="Research Interests">Research Interests</h2>
+
+- Integrated Sensing and Communication (ISAC)
+- Reconfigurable Intelligent Surfaces (RIS)
+- Cooperative Non-Orthogonal-Multiple-Access (C-NOMA)
+- Simultaneous Wireless Information and Power transfer (SWIPT)
+- Deep Reinforcement Learning (DRL) optimization algorithms
+
 <h2 id="publications">Publications</h2>
 
 - IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-
@@ -64,11 +72,3 @@ Duplex Modes. [In progress]
 Presented my research on "Applications of STAR RIS in Communication Systems"
 - 11th International Symposium On Telecommunication, IRAN Telecommunication Research Center (ITRC),
 Oct 2024
-
-<h2 id="Research Interests">Research Interests</h2>
-
-- Integrated Sensing and Communication (ISAC)
-- Reconfigurable Intelligent Surfaces (RIS)
-- Cooperative Non-Orthogonal-Multiple-Access (C-NOMA)
-- Simultaneous Wireless Information and Power transfer (SWIPT)
-- Deep Reinforcement Learning (DRL) optimization algorithms
