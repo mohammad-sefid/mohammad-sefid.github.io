@@ -295,7 +295,8 @@
       {% endif %}
 
       {% if site.title %}
-        <h1>{{ site.title }}</h1>
+        <!-- Wraps your name in a link that goes to the top of the page -->
+        <h1><a href="{{ '/' | relative_url }}" style="color: var(--heading) !important; text-decoration: none;">{{ site.title }}</a></h1>
       {% endif %}
 
       {% if site.description %}
@@ -304,8 +305,17 @@
         </p>
       {% endif %}
 
-    </header>
+      <!-- NAVIGATION MENU -->
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#research-interests">Research Interests</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+        </ul>
+      </nav>
 
+    </header>
 
     <!-- =================================================
          MAIN PAGE CONTENT
