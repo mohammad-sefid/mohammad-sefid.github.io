@@ -70,5 +70,3 @@ Duplex Modes. [In progress]
 
 - Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025
 Presented my research on "Applications of STAR RIS in Communication Systems"
-- 11th International Symposium On Telecommunication, IRAN Telecommunication Research Center (ITRC),
-Oct 2024
