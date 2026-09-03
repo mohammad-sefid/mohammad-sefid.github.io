@@ -298,56 +298,60 @@
 
   <div class="wrapper">
 
-    <header>
+  <header>
 
-      {% if site.logo %}
-        <img src="{{ site.logo | relative_url }}" alt="Logo">
-      {% endif %}
+    {% if site.logo %}
+      <img src="{{ site.logo | relative_url }}" alt="Logo">
+    {% endif %}
 
-      {% if site.title %}
-        <!-- Wraps your name in a link that goes to the top of the page -->
-        <h1><a href="{{ '/' | relative_url }}" style="color: var(--heading) !important; text-decoration: none;">{{ site.title }}</a></h1>
-      {% endif %}
+    {% if site.title %}
+      <h1>
+        <a
+          href="{{ '/' | relative_url }}"
+          style="color: var(--heading) !important; text-decoration: none;">
+          {{ site.title }}
+        </a>
+      </h1>
+    {% endif %}
 
-      {% if site.description %}
-        <p class="profile-description">
-          {{ site.description }}
-        </p>
-      {% endif %}
+    {% if site.description %}
+      <p class="profile-description">
+        {{ site.description }}
+      </p>
+    {% endif %}
 
-      <!-- NAVIGATION MENU -->
-      <nav class="sidebar-nav">
-        <ul>
-          <li><a href="#About-Me">About Me</a></li>
-          <li><a href="#Research-Interests">Research Interests</a></li>
-          <li><a href="#Publications">Publications</a></li>
-          <li><a href="#Teaching">Teaching</a></li>
-          <li><a href="#Technical Skills">Technical Skills</a></li>
-          <li><a href="#Conferences">Conferences</a></li>
-        </ul>
-      </nav>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#About-Me">About Me</a></li>
+        <li><a href="#Research-Interests">Research Interests</a></li>
+        <li><a href="#Publications">Publications</a></li>
+        <li><a href="#Teaching">Teaching</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Conferences">Conferences</a></li>
+      </ul>
+    </nav>
 
-    </header>
+  </header>
 
-    <!-- =================================================
-         MAIN PAGE CONTENT
-         ================================================= -->
+  <section>
+    {{ content }}
+  </section>
 
-    <section>
+</div>
 
-      {{ content }}
 
-    </section>
+<!-- FOOTER -->
+<footer class="site-footer">
+
+  <div class="footer-inner">
+
+    <div class="footer-text">
+      Mohammad Sefid © {{ site.time | date: "%Y" }}
+    </div>
 
   </div>
 
-  <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-text">
-          Mohammad Sefid © {{ site.time | date: "%Y" }}
-        </div>
-      </div>
-    </footer>
+</footer>
 
 
   <!-- ===================================================
