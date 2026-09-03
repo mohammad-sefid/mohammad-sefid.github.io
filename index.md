@@ -42,10 +42,10 @@ of Technology (KNTU), Tehran, Iran. My research focus is on enhancing Integrated
 
 <h2 id="Research-Interests">Research Interests</h2>
 
-- Integrated Sensing and Communication (ISAC) Systems
-- Cooperative Non-Orthogonal Multiple Access (C-NOMA)
-- Simultaneous Wireless Information and Power Transfer (SWIPT)
-- Deep Reinforcement Learning (DRL) Optimization Algorithms
+- Joint Optimization of Communication and Sensing Performance in Next-Generation Wireless Networks
+- Optimization of Reconfigurable Intelligent Surfaces (RIS) to Enhanced Beamforming of Wireless Signals
+-  Simultaneous Wireless Information and Power Transfer (SWIPT) for Cooperative Non-Orthogonal Multiple Access (C-NOMA) Systems
+- Deep Reinforcement Learning (DRL), Classic and Metaheuristic Optimization for wireless Systems
 
 <h2 id="Publications">Publications</h2>
 
