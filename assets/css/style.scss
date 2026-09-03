@@ -87,21 +87,42 @@ header p {
   opacity: 0.8;
 }
 
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
 .site-footer {
-  padding: 24px;
-  border-top: 1px solid var(--border);
-  background: var(--surface);
+  width: 100%;
+  padding: 24px 20px;
+  margin-top: 40px;
+
+  border-top: 1px solid var(--border-color);
+
+  background-color: var(--bg-color);
 
   text-align: center;
+
+  color: var(--text-color);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .footer-inner {
-  width: min(100%, var(--max-width));
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .footer-text {
-  color: var(--text-muted);
-  font-size: 0.82rem;
+  margin: 0;
+
+  color: var(--text-color);
+
+  font-size: 14px;
   font-weight: 600;
+
+  opacity: 0.75;
 }
