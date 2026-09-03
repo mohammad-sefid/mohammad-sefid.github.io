@@ -60,7 +60,7 @@ Manuscript in preparation, 2026
 - Estimation Theory
 - Information Theory
 
-<h2 id="Technical Skills">Technical Skills</h2>
+<h2 id="Technical-Skills">Technical Skills</h2>
 
 - Programming: MATLAB, Python
 - Writing tool: LaTeX, Microsoft Word
