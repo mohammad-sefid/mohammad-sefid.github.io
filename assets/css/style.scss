@@ -88,41 +88,27 @@ header p {
 }
 
 /* =====================================================
-   FOOTER
+   SIDEBAR COPYRIGHT
    ===================================================== */
 
-.site-footer {
-  width: 100%;
-  padding: 24px 20px;
-  margin-top: 40px;
+.sidebar-copyright {
+  margin-top: 28px;
+  padding-top: 0;
 
-  border-top: 1px solid var(--border-color);
+  border-top: none;
 
-  background-color: var(--bg-color);
+  color: var(--text);
 
-  text-align: center;
-
-  color: var(--text-color);
-
-  transition:
-    background-color 0.25s ease,
-    color 0.25s ease,
-    border-color 0.25s ease;
-}
-
-.footer-inner {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.footer-text {
-  margin: 0;
-
-  color: var(--text-color);
-
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 
-  opacity: 0.75;
+  text-align: left;
+
+  opacity: 0.7;
+
+  transition: color 0.25s ease;
+}
+
+.sidebar-copyright:hover {
+  opacity: 1;
 }
