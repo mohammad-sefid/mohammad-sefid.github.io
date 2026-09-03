@@ -12,7 +12,7 @@ layout: default
 <p>
 I am a Communication Systems graduate with a Master's degree in
 Electrical and Electronics Engineering from Khaje Nasir Toosi University
-of Technology (KNTU), Tehran, Iran. My research focus is on enhancing Integrated Sensing and Communication (ISAC) systems assisted Reconfigurable Intelligent Surface (RIS) aided Cooperative Non-Orthogonal Multiple Access (C-NOMA) through Energy Harvested (EH) of signal.
+of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperative NOMA systems for Integrated Sensing and Communication (ISAC), with an emphasis on Simultaneous Wireless Information and Power Transfer (SWIPT), energy harvesting, and optimization-based resource allocation.
 </p>
 
 <div class="social-links">
