@@ -60,11 +60,11 @@ Manuscript in preparation, 2026
 - Estimation Theory
 - Information Theory
 
-<h2 id="Skills">Skills</h2>
+<h2 id="Technical Skills">Technical Skills</h2>
 
-- Programming: Matlab, Python and Github
+- Programming: MATLAB, Python
 - Writing tool: LaTeX, Microsoft Word
-- Schematic design: Microsoft Visio
+- Tools: GitHub, Visio
 
 <h2 id="Conferences">Conferences</h2>
 
