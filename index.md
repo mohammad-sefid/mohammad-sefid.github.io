@@ -15,31 +15,6 @@ Electrical and Electronics Engineering from Khaje Nasir Toosi University
 of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperative NOMA systems for Integrated Sensing and Communication (ISAC), with an emphasis on Simultaneous Wireless Information and Power Transfer (SWIPT), energy harvesting, and optimization-based resource allocation.
 </p>
 
-<div class="social-links">
-
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammad.sefid74@gmail.com"
-     target="_blank"
-     rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"
-         alt="Gmail">
-  </a>
-
-  <a href="https://www.linkedin.com/in/mohammad-sefid/"
-     target="_blank"
-     rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
-         alt="LinkedIn">
-  </a>
-
-  <a href="https://github.com/mohammad-sefid"
-     target="_blank"
-     rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
-         alt="GitHub">
-  </a>
-
-</div>
-
 <h2 id="Research-Interests">Research Interests</h2>
 
 - Joint Optimization of Communication and Sensing Performance in Next-Generation Wireless Networks
