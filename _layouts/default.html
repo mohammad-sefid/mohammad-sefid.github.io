@@ -3,8 +3,6 @@
 
 <head>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
   {% if site.google_analytics %}
   <script>
     (function(i,s,o,g,r,a,m){
@@ -35,15 +33,13 @@
         href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
   <style>
-
     /* =====================================================
        LIGHT / DARK MODE
        ===================================================== */
-
     :root {
       --bg: #ffffff;
       --text: #24292f;
-      --heading: #003366; /* Changed to Dark Blue */
+      --heading: #003366;
       --link: #267cb9;
       --border: #d8dee4;
       --card: #f6f8fa;
@@ -53,51 +49,34 @@
     html.dark-mode {
       --bg: #0d1117;
       --text: #c9d1d9;
-      --heading: #f0f6fc; /* Kept light for readability in dark mode */
+      --heading: #f0f6fc;
       --link: #58a6ff;
       --border: #30363d;
       --card: #161b22;
       --muted: #79c0ff;
     }
 
-    html {
+    html, body, .wrapper {
       background-color: var(--bg);
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     body {
-      background-color: var(--bg) !important;
       color: var(--text) !important;
-      transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
+      margin: 0;
+      padding: 0;
     }
 
-    .wrapper {
-      background-color: var(--bg);
-      transition: background-color 0.3s ease;
-    }
-
-    section,
-    header,
-    footer {
+    section, header, footer {
       color: var(--text);
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h1, h2, h3, h4, h5, h6 {
       color: var(--heading) !important;
       transition: color 0.3s ease;
     }
 
-    p,
-    li,
-    strong,
-    em {
+    p, li, strong, em {
       color: var(--text);
       text-align: justify;
       line-height: 1.6;
@@ -111,8 +90,7 @@
       border-color: var(--border) !important;
     }
 
-    code,
-    pre {
+    code, pre {
       background-color: var(--card) !important;
       color: var(--text) !important;
     }
@@ -121,20 +99,13 @@
       border-left-color: var(--border) !important;
     }
 
-
     /* =====================================================
-       DESCRIPTION
+       DESCRIPTION & PROFILE PHOTO
        ===================================================== */
-
     .profile-description {
       color: var(--muted) !important;
       line-height: 1.6;
     }
-
-
-    /* =====================================================
-       PROFILE PHOTO
-       ===================================================== */
 
     .profile-photo {
       margin: 0 0 20px 0;
@@ -146,20 +117,12 @@
       border-radius: 50%;
       object-fit: cover;
       display: block;
-      border: 4px solid var(--border);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Adds a premium drop shadow */
-      transition: transform 0.3s ease;
+      border: 3px solid var(--border);
     }
-
-    .profile-photo img:hover {
-      transform: scale(1.05); /* Slight zoom effect on hover */
-    }
-
 
     /* =====================================================
        SOCIAL BUTTONS
        ===================================================== */
-
     .social-links {
       margin-top: 20px;
       margin-bottom: 25px;
@@ -176,16 +139,14 @@
       vertical-align: middle;
     }
 
-
     /* =====================================================
-       LIGHT / DARK TOGGLE (Moved to Top Right)
+       LIGHT / DARK TOGGLE
        ===================================================== */
-
     .theme-switch-container {
-      position: fixed;      /* Pins the button to the screen */
-      top: 20px;            /* 20px from the top */
-      right: 20px;          /* 20px from the right */
-      z-index: 999;         /* Ensures it stays above other content */
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 999;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -241,40 +202,29 @@
       font-weight: 600;
     }
 
-    <nav class="top-nav">
-  <ul>
-    <li><a href="#about-me">About Me</a></li>
-    <li><a href="#research-interests">Research Interests</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#teaching">Teaching</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#conferences">Conferences</a></li>
-  </ul>
-</nav>
-
     /* =====================================================
-       FOOTER NAVIGATION
+       TOP NAVIGATION
        ===================================================== */
-    footer {
-      color: var(--text);
-      transition: color 0.3s ease;
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
+    .top-nav {
+      width: 100%;
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+      background-color: var(--bg);
       text-align: center;
+      margin-bottom: 30px;
     }
 
-    .footer-nav ul {
+    .top-nav ul {
       list-style-type: none;
       padding-left: 0;
-      display: flex;
+      margin: 0;
+      display: inline-flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px; /* Adds horizontal space between links */
-      margin: 0;
+      gap: 25px;
     }
 
-    .footer-nav a {
+    .top-nav a {
       text-decoration: none;
       font-weight: 600;
       color: var(--link) !important;
@@ -282,19 +232,22 @@
       transition: opacity 0.2s ease;
     }
 
-    .footer-nav a:hover {
+    .top-nav a:hover {
       text-decoration: underline;
       opacity: 0.8;
     }
-    
+
+    footer {
+      color: var(--text);
+      transition: color 0.3s ease;
+    }
   </style>
 
 </head>
 
-
 <body>
 
-  <!-- LIGHT / DARK SWITCH MOVED HERE -->
+  <!-- LIGHT / DARK SWITCH -->
   <div class="theme-switch-container">
     <span aria-hidden="true">☀️</span>
     <label class="theme-switch" aria-label="Toggle dark mode">
@@ -304,6 +257,18 @@
     <span aria-hidden="true">🌙</span>
     <span class="theme-label" id="themeStatus">Light</span>
   </div>
+
+  <!-- TOP NAVIGATION BAR -->
+  <nav class="top-nav">
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#research-interests">Research Interests</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#conferences">Conferences</a></li>
+    </ul>
+  </nav>
 
   <div class="wrapper">
 
@@ -322,7 +287,7 @@
         </p>
       {% endif %}
 
-      <!-- CONTACT INFORMATION (Moved to Sidebar) -->
+      <!-- CONTACT INFORMATION -->
       <div class="social-links">
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammad.sefid74@gmail.com" target="_blank" rel="noopener noreferrer">
           <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
@@ -336,93 +301,48 @@
       </div>
     </header>
 
-    <!-- MAIN PAGE CONTENT -->
     <section>
       {{ content }}
     </section>
 
-      <div class="sidebar-copyright">
-      Mohammad Sefid © {{ site.time | date: "%Y" }}
-    </div>
-    </footer>
+  </div>
 
-  </header>
-
-  <section>
-    {{ content }}
-  </section>
-
-</div>
-
-
-  <!-- ===================================================
-       DARK / LIGHT MODE JAVASCRIPT
-       =================================================== -->
-
+  <!-- DARK / LIGHT MODE JAVASCRIPT -->
   <script>
-
     (function () {
-
       const toggle = document.getElementById("themeToggle");
       const status = document.getElementById("themeStatus");
 
-      if (!toggle || !status) {
-        return;
-      }
+      if (!toggle || !status) return;
 
       function applyTheme(theme) {
-
         if (theme === "dark") {
-
           document.documentElement.classList.add("dark-mode");
           toggle.checked = true;
           status.textContent = "Dark";
-
         } else {
-
           document.documentElement.classList.remove("dark-mode");
           toggle.checked = false;
           status.textContent = "Light";
-
         }
-
         localStorage.setItem("theme", theme);
       }
 
-
-      /* Load saved theme */
-
       const savedTheme = localStorage.getItem("theme");
-
       if (savedTheme === "dark") {
-
         applyTheme("dark");
-
       } else {
-
         applyTheme("light");
-
       }
 
-
-      /* Toggle theme */
-
       toggle.addEventListener("change", function () {
-
         if (this.checked) {
-
           applyTheme("dark");
-
         } else {
-
           applyTheme("light");
-
         }
-
       });
-
     })();
-
   </script>
 
 </body>
