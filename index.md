@@ -50,7 +50,7 @@ of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperat
 <h2 id="Publications">Publications</h2>
 
 - IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-Duplex Modes
-Mohammad Sefid, Ali H.Bastami, Ali Ahmadi
+Mohammad Sefid, Ali H.Bastami, Ali Ahmadi,
 Manuscript in preparation, 2026
 
 <h2 id="Teaching">Teaching</h2>
