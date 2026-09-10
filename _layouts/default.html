@@ -206,17 +206,22 @@
        TOP NAVIGATION
        ===================================================== */
     .top-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
       border-bottom: 1px solid var(--border);
-      padding: 20px 0;
+      padding: 15px 0;
       background-color: var(--bg);
       text-align: center;
-      margin-bottom: 30px;
-      
-      /* Makes the bar stick to the top during scroll */
-      position: sticky;
-      top: 0;
-      z-index: 998; 
+      z-index: 998;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Adds space at the top of the page so content isn't hidden under the fixed bar */
+    .wrapper {
+      margin-top: 70px;
     }
 
     .top-nav ul {
