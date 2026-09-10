@@ -242,42 +242,40 @@
     }
 
     /* =====================================================
-       SIDEBAR NAVIGATION
+       FOOTER NAVIGATION
        ===================================================== */
-    .sidebar-nav ul {
+    footer {
+      color: var(--text);
+      transition: color 0.3s ease;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .footer-nav ul {
       list-style-type: none;
       padding-left: 0;
-      margin-top: 25px;
-      border-top: 1px solid var(--border);
-      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Adds horizontal space between links */
+      margin: 0;
     }
-    
-    .sidebar-nav li {
-      margin-bottom: 12px;
-    }
-    
-    .sidebar-nav a {
+
+    .footer-nav a {
       text-decoration: none;
       font-weight: 600;
       color: var(--link) !important;
       font-size: 16px;
       transition: opacity 0.2s ease;
     }
-    
-    .sidebar-nav a:hover {
+
+    .footer-nav a:hover {
       text-decoration: underline;
       opacity: 0.8;
     }
-
-    /* =====================================================
-       FOOTER
-       ===================================================== */
-
-    footer {
-      color: var(--text);
-      transition: color 0.3s ease;
-    }
-
+    
   </style>
 
 </head>
