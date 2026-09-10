@@ -12,20 +12,21 @@ layout: default
 <p>
 I am a Communication Systems graduate with a Master's degree in
 Electrical and Electronics Engineering from Khaje Nasir Toosi University
-of Technology (KNTU), Tehran, Iran. My research focus is on enhancing Integrated Sensing and Communication (ISAC) systems assisted Reconfigurable Intelligent Surface (RIS) aided Cooperative Non-Orthogonal Multiple Access (C-NOMA) through Energy Harvested (EH) of signal.
+of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperative NOMA systems for Integrated Sensing and Communication (ISAC), with an emphasis on Simultaneous Wireless Information and Power Transfer (SWIPT), energy harvesting, and optimization-based resource allocation.
 </p>
 
 <h2 id="research-interests">Research Interests</h2>
 
-- Integrated Sensing and Communication (ISAC)
-- Reconfigurable Intelligent Surfaces (RIS)
-- Cooperative Non-Orthogonal-Multiple-Access (C-NOMA)
-- Simultaneous Wireless Information and Power transfer (SWIPT)
-- Deep Reinforcement Learning (DRL) optimization algorithms
+- Joint Optimization of Communication and Sensing Performance in Next-Generation Wireless Networks
+- Optimization of Reconfigurable Intelligent Surfaces (RIS) to Enhanced Beamforming of Wireless Signals
+-  Simultaneous Wireless Information and Power Transfer (SWIPT) for Cooperative Non-Orthogonal Multiple Access (C-NOMA) Systems
+- Deep Reinforcement Learning (DRL), Classic and Metaheuristic Optimization for wireless Systems
 
 <h2 id="publications">Publications</h2>
 
-- IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-Duplex Modes. [In progress]
+- IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-Duplex Modes
+Mohammad Sefid, Ali H.Bastami, Ali Ahmadi,
+Manuscript in preparation, 2026
 
 <h2 id="teaching">Teaching</h2>
 
@@ -34,13 +35,13 @@ of Technology (KNTU), Tehran, Iran. My research focus is on enhancing Integrated
 - Estimation Theory
 - Information Theory
 
-<h2 id="skills">Skills</h2>
+<h2 id="technical skills">Technical Skills</h2>
 
-- Programming: Matlab, Python and Github
+- Programming: MATLAB, Python
 - Writing tool: LaTeX, Microsoft Word
-- Schematic design: Microsoft Visio
+- Tools: GitHub, Visio
 
 <h2 id="conferences">Conferences</h2>
 
-- Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems"
-- 11th International Symposium On Telecommunication, IRAN Telecommunication Research Center (ITRC), Oct 2024
+- Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025
+Presented my research on "Applications of STAR RIS in Communication Systems"
