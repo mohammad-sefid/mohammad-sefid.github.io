@@ -298,38 +298,53 @@
 
   <div class="wrapper">
 
-  <header>
+    <header>
+      {% if site.logo %}
+        <img src="{{ site.logo | relative_url }}" alt="Logo">
+      {% endif %}
 
-    {% if site.logo %}
-      <img src="{{ site.logo | relative_url }}" alt="Logo">
-    {% endif %}
+      {% if site.title %}
+        <h1><a href="{{ '/' | relative_url }}" style="color: var(--heading) !important; text-decoration: none;">{{ site.title }}</a></h1>
+      {% endif %}
 
-    {% if site.title %}
-      <h1>
-        <a
-          href="{{ '/' | relative_url }}"
-          style="color: var(--heading) !important; text-decoration: none;">
-          {{ site.title }}
+      {% if site.description %}
+        <p class="profile-description">
+          {{ site.description }}
+        </p>
+      {% endif %}
+
+      <!-- CONTACT INFORMATION (Moved to Sidebar) -->
+      <div class="social-links">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammad.sefid74@gmail.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
         </a>
-      </h1>
-    {% endif %}
+        <a href="https://www.linkedin.com/in/mohammad-sefid/" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/mohammad-sefid" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+        </a>
+      </div>
+    </header>
 
-    {% if site.description %}
-      <p class="profile-description">
-        {{ site.description }}
-      </p>
-    {% endif %}
+    <!-- MAIN PAGE CONTENT -->
+    <section>
+      {{ content }}
+    </section>
 
-    <nav class="sidebar-nav">
-      <ul>
-        <li><a href="#About-Me">About Me</a></li>
-        <li><a href="#Research-Interests">Research Interests</a></li>
-        <li><a href="#Publications">Publications</a></li>
-        <li><a href="#Teaching">Teaching</a></li>
-        <li><a href="#Technical-Skills">Technical Skills</a></li>
-        <li><a href="#Conferences">Conferences</a></li>
-      </ul>
-    </nav>
+    <!-- NAVIGATION MENU (Moved to Footer) -->
+    <footer>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#About-Me">About Me</a></li>
+          <li><a href="#Research-Interests">Research Interests</a></li>
+          <li><a href="#Publications">Publications</a></li>
+          <li><a href="#Teaching">Teaching</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Conferences">Conferences</a></li>
+        </ul>
+      </nav>
+    </footer>
 
     <div class="sidebar-copyright">
       Mohammad Sefid © {{ site.time | date: "%Y" }}
