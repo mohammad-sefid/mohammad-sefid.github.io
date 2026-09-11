@@ -275,7 +275,7 @@
       <li><a href="#research-interests">Research Interests</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#teaching">Teaching</a></li>
-      <li><a href="#technical skills">Technical Skills</a></li>
+      <li><a href="#technical-skills">Technical Skills</a></li>
       <li><a href="#conferences">Conferences</a></li>
     </ul>
   </nav>
@@ -287,13 +287,15 @@
         <img src="{{ site.logo | relative_url }}" alt="Logo">
       {% endif %}
 
-      {% if site.title %}
-        <h1><a href="{{ '/' | relative_url }}" style="color: var(--heading) !important; text-decoration: none;">{{ site.title }}</a></h1>
+      <!-- Updated to use site.name instead of site.title -->
+      {% if site.name %}
+        <h1><a href="{{ '/' | relative_url }}" style="color: var(--heading) !important; text-decoration: none;">{{ site.name }}</a></h1>
       {% endif %}
 
-      {% if site.description %}
+      <!-- Updated to use site.bio instead of site.description -->
+      {% if site.bio %}
         <p class="profile-description">
-          {{ site.description }}
+          {{ site.bio }}
         </p>
       {% endif %}
 
@@ -310,8 +312,8 @@
         </a>
       </div>
       <div class="sidebar-copyright">
-      Mohammad Sefid © {{ site.time | date: "%Y" }}
-    </div>
+        Mohammad Sefid © {{ site.time | date: "%Y" }}
+      </div>
     </header>
 
     <section>
