@@ -287,9 +287,14 @@
         <img src="{{ site.logo | relative_url }}" alt="Logo">
       {% endif %}
 
-      <!-- Updated to use site.name instead of site.title -->
-      {% if site.name %}
-        <h1><a href="{{ '/' | relative_url }}" style="color: var(--heading) !important; text-decoration: none;">{{ site.name }}</a></h1>
+      <!-- Hardcoded name for the visual website layout -->
+      <h1><a href="{{ '/' | relative_url }}" style="color: var(--heading) !important; text-decoration: none;">Mohammad Sefid</a></h1>
+
+      <!-- Reverted to use site.description so it matches the SEO preview -->
+      {% if site.description %}
+        <p class="profile-description">
+          {{ site.description }}
+        </p>
       {% endif %}
 
       <!-- Updated to use site.bio instead of site.description -->
