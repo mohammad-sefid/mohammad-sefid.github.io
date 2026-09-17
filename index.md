@@ -17,7 +17,7 @@ of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperat
 
 <h2 id="research-interests">Research Interests</h2>
 
-- Joint Optimization of Communication and Sensing Performance in Next-Generation Wireless Networks
+- Joint Optimization of Integrated Communication and Sensing (ISAC) Performance in Next-Generation Wireless Networks
 - Optimization of Reconfigurable Intelligent Surfaces (RIS) to Enhanced Beamforming of Wireless Signals
 - Simultaneous Wireless Information and Power Transfer (SWIPT) for Cooperative Non-Orthogonal Multiple Access (C-NOMA) Systems
 - Deep Reinforcement Learning (DRL), Classic and Metaheuristic Optimization for wireless Systems
