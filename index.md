@@ -17,42 +17,32 @@ of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperat
 
 <h2 id="research-interests">Research Interests</h2>
 
-<p>
-- Joint Optimization of Integrated Communication and Sensing (ISAC) Performance in Next-Generation Wireless Networks<br>
-- Optimization of Reconfigurable Intelligent Surfaces (RIS) to Enhanced Beamforming of Wireless Signals<br>
-- Simultaneous Wireless Information and Power Transfer (SWIPT) for Cooperative Non-Orthogonal Multiple Access (C-NOMA) Systems<br>
+- Joint Optimization of Integrated Communication and Sensing (ISAC) Performance in Next-Generation Wireless Networks
+- Optimization of Reconfigurable Intelligent Surfaces (RIS) to Enhanced Beamforming of Wireless Signals
+- Simultaneous Wireless Information and Power Transfer (SWIPT) for Cooperative Non-Orthogonal Multiple Access (C-NOMA) Systems
 - Deep Reinforcement Learning (DRL), Classic and Metaheuristic Optimization for wireless Systems
-</p>
 
 <h2 id="publications">Publications</h2>
 
-<p>
-IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-Duplex Modes<br>
-Mohammad Sefid, Ali H.Bastami, Ali Ahmadi,<br>
+- IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-Duplex Modes
+Mohammad Sefid, Ali H.Bastami, Ali Ahmadi,
 Manuscript in preparation, 2026
-</p>
 
 <h2 id="teaching">Teaching</h2>
 
-<p>
-- Numerical Optimization<br>
-- Stochastic Processes<br>
-- Estimation Theory<br>
+- Numerical Optimization
+- Stochastic Processes
+- Estimation Theory
 - Information Theory
-</p>
 
 <!-- ID updated to match the navigation link -->
 <h2 id="technical-skills">Technical Skills</h2>
 
-<p>
-- Programming: MATLAB, Python<br>
-- Writing tool: LaTeX, Microsoft Word<br>
+- Programming: MATLAB, Python
+- Writing tool: LaTeX, Microsoft Word
 - Tools: GitHub, Visio
-</p>
 
 <h2 id="conferences">Conferences</h2>
 
-<p>
-Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025<br>
+- Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025
 Presented my research on "Applications of STAR RIS in Communication Systems"
-</p>
