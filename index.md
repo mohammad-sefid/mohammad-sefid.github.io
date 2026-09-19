@@ -24,9 +24,9 @@ of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperat
 
 <h2 id="publications">Publications</h2>
 
-- IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-Duplex Modes
-Mohammad Sefid, Ali H.Bastami, Ali Ahmadi,
-Manuscript in preparation, 2026
+- **IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-Duplex Modes**<br>
+  Mohammad Sefid, Ali H.Bastami, Ali Ahmadi<br>
+  *Manuscript in preparation, 2026*
 
 <h2 id="teaching">Teaching</h2>
 
@@ -44,5 +44,5 @@ Manuscript in preparation, 2026
 
 <h2 id="conferences">Conferences</h2>
 
-- Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025
-Presented my research on "Applications of STAR RIS in Communication Systems"
+- **Conference on Electrical and Computer Innovations**, K. N. Toosi University of Technology, Feb 2025<br>
+  Presented my research on "Applications of STAR RIS in Communication Systems"
