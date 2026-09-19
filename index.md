@@ -7,9 +7,9 @@ layout: default
        alt="Mohammad Sefid">
 </div>
 
-<h2 id="about-me">About Me</h2>
+<h2 id="about-me">About Me</h2> 
 
-<p>
+<p style="text-align: justify;">
 I am a Communication Systems graduate with a Master's degree in
 Electrical and Electronics Engineering from Khaje Nasir Toosi University
 of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperative NOMA systems for Integrated Sensing and Communication (ISAC), with an emphasis on Simultaneous Wireless Information and Power Transfer (SWIPT), energy harvesting, and optimization-based resource allocation.
@@ -24,7 +24,7 @@ of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperat
 
 <h2 id="publications">Publications</h2>
 
-<p>
+<p style="text-align: justify;">
 IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-Duplex Modes Mohammad Sefid, Ali H.Bastami, Ali Ahmadi, Manuscript in preparation, 2026
 </p>
 
@@ -44,6 +44,6 @@ IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-D
 
 <h2 id="conferences">Conferences</h2>
 
-<p>
+<p style="text-align: justify;">
 Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems"
 </p>
