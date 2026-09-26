@@ -56,8 +56,9 @@
       --muted: #79c0ff;
     }
 
+    /* THE !important HERE FIXES THE LIGHT MODE BUG */
     html, body, .wrapper {
-      background-color: var(--bg);
+      background-color: var(--bg) !important; 
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
@@ -145,12 +146,28 @@
     }
 
     /* =====================================================
-       LIGHT / DARK TOGGLE
+       TOP NAVIGATION & THEME SWITCH
        ===================================================== */
-    .theme-switch-container {
+    .top-nav {
       position: fixed;
-      top: 20px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid var(--border);
+      padding: 15px 0;
+      background-color: var(--bg) !important;
+      text-align: center;
+      z-index: 998;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Moves the button inside the top bar on the far right */
+    .theme-switch-container {
+      position: absolute;
+      top: 50%;
       right: 20px;
+      transform: translateY(-50%);
       z-index: 999;
       display: flex;
       align-items: center;
@@ -207,23 +224,6 @@
       font-weight: 600;
     }
 
-    /* =====================================================
-       TOP NAVIGATION
-       ===================================================== */
-    .top-nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      border-bottom: 1px solid var(--border);
-      padding: 15px 0;
-      background-color: var(--bg);
-      text-align: center;
-      z-index: 998;
-      box-sizing: border-box;
-      transition: background-color 0.3s ease;
-    }
-
     /* Adds space at the top of the page so content isn't hidden under the fixed bar */
     .wrapper {
       margin-top: 70px;
@@ -261,7 +261,7 @@
        MOBILE RESPONSIVENESS
        ===================================================== */
     @media (max-width: 768px) {
-      /* Locks the top bar to the top and adds a background color to hide scrolling text */
+      /* Gives the top nav extra padding so the links don't hit the toggle button */
       .top-nav {
         position: fixed !important;
         top: 0;
@@ -269,8 +269,23 @@
         width: 100%;
         background-color: var(--bg) !important;
         z-index: 9999;
-        padding: 10px 0;
+        padding-top: 50px !important; 
+        padding-bottom: 10px !important;
         border-bottom: 1px solid var(--border) !important;
+      }
+
+      /* Perfectly centers the toggle button at the very top of the mobile screen */
+      .theme-switch-container {
+        position: absolute !important;
+        top: 10px !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) !important;
+        bottom: auto !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
       }
 
       /* Pushes the contact info/photo down so the fixed top bar doesn't cover it */
@@ -288,18 +303,6 @@
         float: none !important;
         margin-left: 0 !important;
         padding: 15px 0 !important;
-      }
-
-      /* Pins the entire theme toggle container to the bottom right */
-      .theme-switch-container { 
-        top: auto !important;
-        bottom: 20px !important;
-        right: 20px !important;
-        background-color: var(--bg) !important;
-        padding: 8px 12px;
-        border-radius: 30px;
-        border: 1px solid var(--border);
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       }
 
       /* Allows top navigation links to wrap cleanly */
@@ -341,6 +344,17 @@
 
   <!-- TOP NAVIGATION BAR -->
   <nav class="top-nav">
+    
+    <!-- THE TOGGLE BUTTON IS NOW INSIDE THE NAV -->
+    <div class="theme-switch-container">
+      <label class="theme-switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+      <span id="themeStatus" class="theme-label">Light</span>
+    </div>
+
+    <!-- YOUR LINKS -->
     <ul>
       <li><a href="#about-me">About Me</a></li>
       <li><a href="#research-interests">Research Interests</a></li>
@@ -349,7 +363,6 @@
       <li><a href="#technical-skills">Technical Skills</a></li>
       <li><a href="#conferences">Conferences</a></li>
       <li><a href="#updates">Updates</a></li>
-      <!--<li><a href="{{ '/CV.pdf' | relative_url }}" target="_blank">CV</a></li>-->
     </ul>
   </nav>
 
