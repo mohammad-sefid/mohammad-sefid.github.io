@@ -80,7 +80,6 @@
       transition: color 0.3s ease;
       scroll-margin-top: 90px; 
     }
-    }
 
     p, li, strong, em {
       color: var(--text);
@@ -268,16 +267,16 @@
         top: 0;
         left: 0;
         width: 100%;
-        background-color: var(--bg-color, #ffffff); /* Uses your theme's background color */
+        background-color: var(--bg) !important;
         z-index: 9999;
         padding: 10px 0;
-        border-bottom: 1px solid var(--border-color, #eaeaea);
+        border-bottom: 1px solid var(--border) !important;
       }
 
       /* Pushes the contact info/photo down so the fixed top bar doesn't cover it */
       header {
         position: relative !important;
-        margin-top: 100px !important; /* Cushions the fixed top bar */
+        margin-top: 100px !important; 
         width: 100% !important;
         float: none !important;
         padding: 15px 0 !important;
@@ -291,14 +290,16 @@
         padding: 15px 0 !important;
       }
 
-      /* Pins the light/dark mode toggle to the bottom right corner */
-      /* Note: change '.theme-toggle' to your exact button class or ID if it differs */
-      .theme-toggle, #dark-mode-btn, .dark-mode-toggle { 
-        position: fixed !important;
+      /* Pins the entire theme toggle container to the bottom right */
+      .theme-switch-container { 
+        top: auto !important;
         bottom: 20px !important;
         right: 20px !important;
-        top: auto !important;
-        z-index: 10000;
+        background-color: var(--bg) !important;
+        padding: 8px 12px;
+        border-radius: 30px;
+        border: 1px solid var(--border);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       }
 
       /* Allows top navigation links to wrap cleanly */
@@ -321,7 +322,6 @@
       }
     }
   </style>
-
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
