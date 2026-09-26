@@ -174,6 +174,7 @@
       font-size: 14px;
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
+      user-select: none; /* Prevents accidental text selection when tapping */
     }
 
     .theme-switch {
@@ -183,14 +184,9 @@
       height: 30px;
     }
 
+    /* Entirely hides the checkbox from the browser rendering engine */
     .theme-switch input {
-      position: absolute;
-      opacity: 0;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      cursor: pointer;
-      z-index: 2; 
+      display: none;
     }
 
     .slider {
@@ -199,7 +195,6 @@
       background-color: #b8bec5;
       border-radius: 30px;
       transition: 0.3s ease;
-      z-index: 1;
     }
 
     .slider:before {
@@ -292,7 +287,7 @@
         background: transparent !important;
         border: none !important;
         box-shadow: none !important;
-        padding: 0 !important;
+        padding: 10px !important; /* Makes the tap area bigger */
         z-index: 10000 !important; 
       }
 
@@ -345,8 +340,8 @@
 
   <nav class="top-nav">
     
-    <!-- THE FIX: Made the entire container a `<label>` so the native browser handles clicks -->
-    <label class="theme-switch-container" for="themeToggle" aria-label="Toggle dark mode">
+    <!-- Changed to a standard div to bypass native HTML forms entirely -->
+    <div class="theme-switch-container" id="themeBtn">
       <span aria-hidden="true">☀️</span>
       <span class="theme-switch">
         <input type="checkbox" id="themeToggle">
@@ -354,7 +349,7 @@
       </span>
       <span aria-hidden="true">🌙</span>
       <span id="themeStatus" class="theme-label">Light</span>
-    </label>
+    </div>
 
     <ul>
       <li><a href="#about-me">About Me</a></li>
@@ -422,8 +417,9 @@
     document.addEventListener("DOMContentLoaded", function () {
       const toggle = document.getElementById("themeToggle");
       const status = document.getElementById("themeStatus");
+      const themeBtn = document.getElementById("themeBtn"); // The new master click container
 
-      if (!toggle || !status) return;
+      if (!toggle || !status || !themeBtn) return;
 
       function applyTheme(theme) {
         if (theme === "dark") {
@@ -457,9 +453,11 @@
         applyTheme(systemDark ? "dark" : "light");
       }
 
-      // Pure HTML listener—handles clicks from Chrome, Safari, and Samsung Internet flawlessly
-      toggle.addEventListener("change", function () {
-        applyTheme(this.checked ? "dark" : "light");
+      // 100% Pure JavaScript Click Handler. Overrides browser quirks completely.
+      themeBtn.addEventListener("click", function (e) {
+        e.preventDefault(); // Stops Samsung browser from interfering
+        toggle.checked = !toggle.checked; // Manually flips the invisible checkbox switch
+        applyTheme(toggle.checked ? "dark" : "light");
       });
     });
   </script>
