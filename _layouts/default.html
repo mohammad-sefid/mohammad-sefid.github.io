@@ -274,7 +274,7 @@
         border-bottom: 1px solid var(--border) !important;
       }
 
-      /* Perfectly centers the toggle button at the very top of the mobile screen */
+      /* Brings the button to the absolute front so links do not block clicks */
       .theme-switch-container {
         position: absolute !important;
         top: 10px !important;
@@ -286,12 +286,17 @@
         border: none !important;
         box-shadow: none !important;
         padding: 0 !important;
+        z-index: 10000 !important; 
       }
 
-      /* Pushes the contact info/photo down so the fixed top bar doesn't cover it */
+      /* Significantly increases the top margin to push content down past the tall mobile nav */
+      .wrapper {
+        margin-top: 240px !important; 
+      }
+
       header {
         position: relative !important;
-        margin-top: 100px !important; 
+        margin-top: 0 !important; 
         width: 100% !important;
         float: none !important;
         padding: 15px 0 !important;
