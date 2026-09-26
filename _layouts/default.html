@@ -261,12 +261,11 @@
        MOBILE RESPONSIVENESS
        ===================================================== */
     @media (max-width: 768px) {
-      /* Stops scrolling 260px above the title so the tall mobile menu doesn't cover it */
+      /* Reduced from 260px to 160px to match the new top margin */
       h1, h2, h3, h4, h5, h6 {
-        scroll-margin-top: 260px !important; 
+        scroll-margin-top: 160px !important; 
       }
 
-      /* Changes the nav to a flex column so the button and links never overlap */
       .top-nav {
         position: fixed !important;
         top: 0;
@@ -282,7 +281,6 @@
         border-bottom: 1px solid var(--border) !important;
       }
 
-      /* Places the button naturally above the links so it is fully clickable */
       .theme-switch-container {
         position: relative !important;
         top: auto !important;
@@ -294,11 +292,12 @@
         box-shadow: none !important;
         padding: 0 !important;
         z-index: 10000 !important; 
+        cursor: pointer; /* Tells the phone the entire area is tappable */
       }
 
-      /* Massively increases the top cushion so the tall mobile nav doesn't cover your name */
+      /* Reduced from 280px to 170px to bring your name further up */
       .wrapper {
-        margin-top: 280px !important; 
+        margin-top: 170px !important; 
       }
 
       header {
@@ -318,7 +317,6 @@
         padding: 15px 0 !important;
       }
 
-      /* Compacts the links slightly to save screen space */
       .top-nav ul {
         display: flex;
         flex-wrap: wrap;
@@ -335,7 +333,6 @@
         font-size: 14px !important;
       }
 
-      /* Ensures images do not stretch past the mobile screen */
       img {
         max-width: 100% !important;
         height: auto !important;
@@ -429,10 +426,10 @@
 
   <!-- DARK / LIGHT MODE JAVASCRIPT -->
   <script>
-    // Wait for the page to fully load before running the script
     document.addEventListener("DOMContentLoaded", function () {
       const toggle = document.getElementById("themeToggle");
       const status = document.getElementById("themeStatus");
+      const container = document.querySelector(".theme-switch-container");
 
       if (!toggle || !status) return;
 
@@ -448,24 +445,43 @@
           toggle.checked = false;
           status.textContent = "Light";
         }
-        localStorage.setItem("theme", theme);
+        
+        // Try/catch prevents crashes if the user is in Mobile Private Browsing mode
+        try {
+          localStorage.setItem("theme", theme);
+        } catch (e) {} 
       }
 
-      // Check for saved preference, otherwise check the system preference
-      const savedTheme = localStorage.getItem("theme");
+      // Load saved preference safely
+      let savedTheme = null;
+      try {
+        savedTheme = localStorage.getItem("theme");
+      } catch (e) {}
+
       if (savedTheme === "dark") {
         applyTheme("dark");
       } else if (savedTheme === "light") {
         applyTheme("light");
       } else {
-        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const systemDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
         applyTheme(systemDark ? "dark" : "light");
       }
 
-      // Listen for the toggle click
+      // Desktop click listener
       toggle.addEventListener("change", function () {
         applyTheme(this.checked ? "dark" : "light");
       });
+
+      // Mobile fix: Makes the emojis and text around the button fully tappable
+      if (container) {
+        container.addEventListener("click", function (e) {
+          // Prevents double-firing if they managed to tap the exact center of the input
+          if (e.target.tagName !== "INPUT" && e.target.tagName !== "LABEL" && !e.target.classList.contains("slider")) {
+            toggle.checked = !toggle.checked;
+            applyTheme(toggle.checked ? "dark" : "light");
+          }
+        });
+      }
     });
   </script>
 
