@@ -32,6 +32,37 @@
   <link rel="stylesheet"
         href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
+  /* =====================================================
+       MOBILE RESPONSIVENESS
+       ===================================================== */
+    @media (max-width: 768px) {
+      /* Forces sidebars and main content to stack vertically */
+      header, section {
+        width: 100% !important;
+        float: none !important;
+        margin-left: 0 !important;
+        padding: 15px 0 !important;
+      }
+
+      /* Allows top navigation links to wrap to the next line instead of overflowing */
+      .top-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+      }
+
+      .top-nav li {
+        margin: 5px 10px;
+      }
+
+      /* Ensures no images break outside their containers */
+      img {
+        max-width: 100% !important;
+        height: auto !important;
+      }
+    }
+
   <style>
     /* =====================================================
        LIGHT / DARK MODE
@@ -260,6 +291,8 @@
   </style>
 
 </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <body>
 
