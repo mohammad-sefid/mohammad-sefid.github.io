@@ -51,3 +51,14 @@ IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-D
 <p style="text-align: justify;">
 Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems".
 </p>
+
+<h2 id="updates">Updates</h2>
+
+<!-- Centers the image and adds a slight curve to the corners -->
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="{{ '/running.jpg' | relative_url }}" alt="Running Experience" style="max-width: 100%; border-radius: 8px;">
+</div>
+
+<p>
+This is where you can write about your running experience. Since we applied the global CSS rule in the previous step, this text will automatically be justified and align perfectly with the rest of your website's content.
+</p>
