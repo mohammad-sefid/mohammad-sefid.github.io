@@ -261,6 +261,11 @@
        MOBILE RESPONSIVENESS
        ===================================================== */
     @media (max-width: 768px) {
+      /* Stops scrolling 260px above the title so the tall mobile menu doesn't cover it */
+      h1, h2, h3, h4, h5, h6 {
+        scroll-margin-top: 260px !important; 
+      }
+
       /* Changes the nav to a flex column so the button and links never overlap */
       .top-nav {
         position: fixed !important;
@@ -347,7 +352,7 @@
     <!-- THE SINGLE, CORRECT TOGGLE BUTTON -->
     <div class="theme-switch-container">
       <span aria-hidden="true">☀️</span>
-      <label class="theme-switch" aria-label="Toggle dark mode">
+      <label class="theme-switch" for="themeToggle" aria-label="Toggle dark mode">
         <input type="checkbox" id="themeToggle">
         <span class="slider"></span>
       </label>
