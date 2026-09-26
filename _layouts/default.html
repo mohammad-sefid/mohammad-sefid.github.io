@@ -56,7 +56,6 @@
       --muted: #79c0ff !important;
     }
 
-    /* THE !important HERE FIXES THE LIGHT MODE BUG */
     html, body, .wrapper {
       background-color: var(--bg) !important; 
       transition: background-color 0.3s ease, color 0.3s ease;
@@ -162,7 +161,6 @@
       transition: background-color 0.3s ease;
     }
 
-    /* Moves the button inside the top bar on the far right */
     .theme-switch-container {
       position: absolute;
       top: 50%;
@@ -174,6 +172,8 @@
       gap: 10px;
       color: var(--text) !important;
       font-size: 14px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .theme-switch {
@@ -183,19 +183,24 @@
       height: 30px;
     }
 
+    /* FIX: Make the input cover the entire button so your phone registers the tap natively */
     .theme-switch input {
+      position: absolute;
       opacity: 0;
-      width: 0;
-      height: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      cursor: pointer;
+      z-index: 2; 
     }
 
     .slider {
       position: absolute;
       inset: 0;
-      cursor: pointer;
       background-color: #b8bec5;
       border-radius: 30px;
       transition: 0.3s ease;
+      z-index: 1;
     }
 
     .slider:before {
@@ -224,7 +229,6 @@
       font-weight: 600;
     }
 
-    /* Adds space at the top of the page so content isn't hidden under the fixed bar */
     .wrapper {
       margin-top: 70px;
     }
@@ -261,12 +265,10 @@
        MOBILE RESPONSIVENESS
        ===================================================== */
     @media (max-width: 768px) {
-      /* Stops scrolling 260px above the title so the tall mobile menu doesn't cover it */
       h1, h2, h3, h4, h5, h6 {
         scroll-margin-top: 260px !important; 
       }
 
-      /* Changes the nav to a flex column so the button and links never overlap */
       .top-nav {
         position: fixed !important;
         top: 0;
@@ -282,7 +284,6 @@
         border-bottom: 1px solid var(--border) !important;
       }
 
-      /* Places the button naturally above the links so it is fully clickable */
       .theme-switch-container {
         position: relative !important;
         top: auto !important;
@@ -296,7 +297,6 @@
         z-index: 10000 !important; 
       }
 
-      /* Massively increases the top cushion so the tall mobile nav doesn't cover your name */
       .wrapper {
         margin-top: 280px !important; 
       }
@@ -318,7 +318,6 @@
         padding: 15px 0 !important;
       }
 
-      /* Compacts the links slightly to save screen space */
       .top-nav ul {
         display: flex;
         flex-wrap: wrap;
@@ -335,7 +334,6 @@
         font-size: 14px !important;
       }
 
-      /* Ensures images do not stretch past the mobile screen */
       img {
         max-width: 100% !important;
         height: auto !important;
@@ -346,13 +344,10 @@
 
 <body>
 
-  <!-- TOP NAVIGATION BAR -->
   <nav class="top-nav">
     
-    <!-- THE SINGLE, CORRECT TOGGLE BUTTON -->
     <div class="theme-switch-container">
       <span aria-hidden="true">☀️</span>
-      <!-- Added for="themeToggle" to force mobile screens to register the tap -->
       <label class="theme-switch" for="themeToggle" aria-label="Toggle dark mode">
         <input type="checkbox" id="themeToggle">
         <span class="slider"></span>
@@ -360,7 +355,7 @@
       <span aria-hidden="true">🌙</span>
       <span id="themeStatus" class="theme-label">Light</span>
     </div>
-    <!-- YOUR LINKS -->
+
     <ul>
       <li><a href="#about-me">About Me</a></li>
       <li><a href="#research-interests">Research Interests</a></li>
@@ -379,24 +374,20 @@
         <img src="{{ site.logo | relative_url }}" alt="Logo">
       {% endif %}
 
-      <!-- Hardcoded name for the visual website layout -->
       <h1><a href="{{ '/' | relative_url }}" style="color: var(--heading) !important; text-decoration: none;">Mohammad Sefid</a></h1>
 
-      <!-- Reverted to use site.description so it matches the SEO preview -->
       {% if site.description %}
         <p class="profile-description">
           {{ site.description }}
         </p>
       {% endif %}
 
-      <!-- Updated to use site.bio instead of site.description -->
       {% if site.bio %}
         <p class="profile-description">
           {{ site.bio }}
         </p>
       {% endif %}
 
-      <!-- CONTACT INFORMATION -->
       <div class="social-links">
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammad.sefid74@gmail.com" target="_blank" rel="noopener noreferrer">
           <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
@@ -409,7 +400,6 @@
         </a>
       </div>
       
-      <!-- CV BUTTON -->
       <div style="margin-bottom: 25px;">
         <a href="{{ '/CV.pdf' | relative_url }}" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: var(--link); color: #ffffff !important; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 14px; transition: opacity 0.2s ease;">
           📄 View My CV
@@ -449,13 +439,11 @@
           status.textContent = "Light";
         }
         
-        // Try/catch prevents crashes if the user is in Mobile Private Browsing mode
         try {
           localStorage.setItem("theme", theme);
         } catch (e) {} 
       }
 
-      // Load saved preference safely
       let savedTheme = null;
       try {
         savedTheme = localStorage.getItem("theme");
@@ -470,18 +458,17 @@
         applyTheme(systemDark ? "dark" : "light");
       }
 
-      // Desktop click listener
+      // 1. Native change listener for the input checkbox (fires perfectly on desktop and direct mobile taps)
       toggle.addEventListener("change", function () {
         applyTheme(this.checked ? "dark" : "light");
       });
 
-      // Mobile fix: Makes the emojis and text around the button fully tappable
+      // 2. Mobile fix: If you tap the sun/moon emojis, artificially click the checkbox for the user
       if (container) {
         container.addEventListener("click", function (e) {
-          // Prevents double-firing if they managed to tap the exact center of the input
-          if (e.target.tagName !== "INPUT" && e.target.tagName !== "LABEL" && !e.target.classList.contains("slider")) {
-            toggle.checked = !toggle.checked;
-            applyTheme(toggle.checked ? "dark" : "light");
+          if (e.target.tagName !== "INPUT") {
+            e.preventDefault();
+            toggle.click(); 
           }
         });
       }
