@@ -60,5 +60,5 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
 </div>
 
 <p>
-This photo is from my first Terry Fox Run. I ran about 9.31 Km (around Stanley Park) in 50 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist which died due to bone cancer (He is best known for initiating the Marathon of Hope, a cross-country in 1980 after losing his right leg). He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research. <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank"</a>
+This photo is from my first Terry Fox Run. I ran about 9.31 km (around Stanley Park) in 50 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist which died due to bone cancer. <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a> He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research. 
 </p>
