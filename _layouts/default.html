@@ -36,24 +36,24 @@
     /* =====================================================
        LIGHT / DARK MODE
        ===================================================== */
-    :root {
-      --bg: #ffffff;
-      --text: #24292f;
-      --heading: #003366;
-      --link: #267cb9;
-      --border: #d8dee4;
-      --card: #f6f8fa;
-      --muted: #6daedb;
+    :root, html.light-mode {
+      --bg: #ffffff !important;
+      --text: #24292f !important;
+      --heading: #003366 !important;
+      --link: #267cb9 !important;
+      --border: #d8dee4 !important;
+      --card: #f6f8fa !important;
+      --muted: #6daedb !important;
     }
 
     html.dark-mode {
-      --bg: #0d1117;
-      --text: #c9d1d9;
-      --heading: #f0f6fc;
-      --link: #58a6ff;
-      --border: #30363d;
-      --card: #161b22;
-      --muted: #79c0ff;
+      --bg: #0d1117 !important;
+      --text: #c9d1d9 !important;
+      --heading: #f0f6fc !important;
+      --link: #58a6ff !important;
+      --border: #30363d !important;
+      --card: #161b22 !important;
+      --muted: #79c0ff !important;
     }
 
     /* THE !important HERE FIXES THE LIGHT MODE BUG */
@@ -172,7 +172,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      color: var(--text);
+      color: var(--text) !important;
       font-size: 14px;
     }
 
@@ -327,30 +327,19 @@
   </style>
 </head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <body>
-
-  <!-- LIGHT / DARK SWITCH -->
-  <div class="theme-switch-container">
-    <span aria-hidden="true">☀️</span>
-    <label class="theme-switch" aria-label="Toggle dark mode">
-      <input type="checkbox" id="themeToggle">
-      <span class="slider"></span>
-    </label>
-    <span aria-hidden="true">🌙</span>
-    <span class="theme-label" id="themeStatus">Light</span>
-  </div>
 
   <!-- TOP NAVIGATION BAR -->
   <nav class="top-nav">
     
-    <!-- THE TOGGLE BUTTON IS NOW INSIDE THE NAV -->
+    <!-- THE SINGLE, CORRECT TOGGLE BUTTON -->
     <div class="theme-switch-container">
-      <label class="theme-switch">
+      <span aria-hidden="true">☀️</span>
+      <label class="theme-switch" aria-label="Toggle dark mode">
         <input type="checkbox" id="themeToggle">
         <span class="slider"></span>
       </label>
+      <span aria-hidden="true">🌙</span>
       <span id="themeStatus" class="theme-label">Light</span>
     </div>
 
@@ -365,6 +354,7 @@
       <li><a href="#updates">Updates</a></li>
     </ul>
   </nav>
+  
   <div class="wrapper">
 
     <header>
