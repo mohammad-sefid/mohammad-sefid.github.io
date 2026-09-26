@@ -262,19 +262,43 @@
        MOBILE RESPONSIVENESS
        ===================================================== */
     @media (max-width: 768px) {
-      /* Brings the top bar into the normal flow so it pushes content down */
+      /* Locks the top bar to the top and adds a background color to hide scrolling text */
       .top-nav {
-        position: relative !important;
-        margin-bottom: 20px;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-color, #ffffff); /* Uses your theme's background color */
+        z-index: 9999;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border-color, #eaeaea);
       }
 
-      /* Removes desktop absolute positioning to prevent overlap */
-      header, section {
+      /* Pushes the contact info/photo down so the fixed top bar doesn't cover it */
+      header {
+        position: relative !important;
+        margin-top: 100px !important; /* Cushions the fixed top bar */
+        width: 100% !important;
+        float: none !important;
+        padding: 15px 0 !important;
+      }
+      
+      section {
         position: relative !important;
         width: 100% !important;
         float: none !important;
         margin-left: 0 !important;
         padding: 15px 0 !important;
+      }
+
+      /* Pins the light/dark mode toggle to the bottom right corner */
+      /* Note: change '.theme-toggle' to your exact button class or ID if it differs */
+      .theme-toggle, #dark-mode-btn, .dark-mode-toggle { 
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        top: auto !important;
+        z-index: 10000;
       }
 
       /* Allows top navigation links to wrap cleanly */
@@ -283,13 +307,14 @@
         flex-wrap: wrap;
         justify-content: center;
         padding: 0;
+        margin: 0;
       }
 
       .top-nav li {
         margin: 5px 10px;
       }
 
-      /* Ensures no images break outside their containers */
+      /* Ensures images do not stretch past the mobile screen */
       img {
         max-width: 100% !important;
         height: auto !important;
