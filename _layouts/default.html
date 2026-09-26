@@ -183,7 +183,6 @@
       height: 30px;
     }
 
-    /* FIX: Make the input cover the entire button so your phone registers the tap natively */
     .theme-switch input {
       position: absolute;
       opacity: 0;
@@ -346,15 +345,16 @@
 
   <nav class="top-nav">
     
-    <div class="theme-switch-container">
+    <!-- THE FIX: Made the entire container a `<label>` so the native browser handles clicks -->
+    <label class="theme-switch-container" for="themeToggle" aria-label="Toggle dark mode">
       <span aria-hidden="true">☀️</span>
-      <label class="theme-switch" for="themeToggle" aria-label="Toggle dark mode">
+      <span class="theme-switch">
         <input type="checkbox" id="themeToggle">
         <span class="slider"></span>
-      </label>
+      </span>
       <span aria-hidden="true">🌙</span>
       <span id="themeStatus" class="theme-label">Light</span>
-    </div>
+    </label>
 
     <ul>
       <li><a href="#about-me">About Me</a></li>
@@ -422,7 +422,6 @@
     document.addEventListener("DOMContentLoaded", function () {
       const toggle = document.getElementById("themeToggle");
       const status = document.getElementById("themeStatus");
-      const container = document.querySelector(".theme-switch-container");
 
       if (!toggle || !status) return;
 
@@ -458,20 +457,10 @@
         applyTheme(systemDark ? "dark" : "light");
       }
 
-      // 1. Native change listener for the input checkbox (fires perfectly on desktop and direct mobile taps)
+      // Pure HTML listener—handles clicks from Chrome, Safari, and Samsung Internet flawlessly
       toggle.addEventListener("change", function () {
         applyTheme(this.checked ? "dark" : "light");
       });
-
-      // 2. Mobile fix: If you tap the sun/moon emojis, artificially click the checkbox for the user
-      if (container) {
-        container.addEventListener("click", function (e) {
-          if (e.target.tagName !== "INPUT") {
-            e.preventDefault();
-            toggle.click(); 
-          }
-        });
-      }
     });
   </script>
 
