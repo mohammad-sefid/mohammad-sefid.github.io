@@ -261,7 +261,7 @@
        MOBILE RESPONSIVENESS
        ===================================================== */
     @media (max-width: 768px) {
-      /* Gives the top nav extra padding so the links don't hit the toggle button */
+      /* Changes the nav to a flex column so the button and links never overlap */
       .top-nav {
         position: fixed !important;
         top: 0;
@@ -269,19 +269,21 @@
         width: 100%;
         background-color: var(--bg) !important;
         z-index: 9999;
-        padding-top: 50px !important; 
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding-top: 15px !important; 
         padding-bottom: 10px !important;
         border-bottom: 1px solid var(--border) !important;
       }
 
-      /* Brings the button to the absolute front so links do not block clicks */
+      /* Places the button naturally above the links so it is fully clickable */
       .theme-switch-container {
-        position: absolute !important;
-        top: 10px !important;
-        left: 50% !important;
-        right: auto !important;
-        transform: translateX(-50%) !important;
-        bottom: auto !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        margin-bottom: 15px !important;
         background: transparent !important;
         border: none !important;
         box-shadow: none !important;
@@ -289,13 +291,14 @@
         z-index: 10000 !important; 
       }
 
-      /* Significantly increases the top margin to push content down past the tall mobile nav */
+      /* Massively increases the top cushion so the tall mobile nav doesn't cover your name */
       .wrapper {
-        margin-top: 240px !important; 
+        margin-top: 280px !important; 
       }
 
       header {
         position: relative !important;
+        top: 0 !important;
         margin-top: 0 !important; 
         width: 100% !important;
         float: none !important;
@@ -310,7 +313,7 @@
         padding: 15px 0 !important;
       }
 
-      /* Allows top navigation links to wrap cleanly */
+      /* Compacts the links slightly to save screen space */
       .top-nav ul {
         display: flex;
         flex-wrap: wrap;
@@ -320,7 +323,11 @@
       }
 
       .top-nav li {
-        margin: 5px 10px;
+        margin: 5px 8px;
+      }
+      
+      .top-nav a {
+        font-size: 14px !important;
       }
 
       /* Ensures images do not stretch past the mobile screen */
