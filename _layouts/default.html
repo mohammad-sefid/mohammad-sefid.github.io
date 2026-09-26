@@ -261,11 +261,12 @@
        MOBILE RESPONSIVENESS
        ===================================================== */
     @media (max-width: 768px) {
-      /* Reduced from 260px to 160px to match the new top margin */
+      /* Stops scrolling 260px above the title so the tall mobile menu doesn't cover it */
       h1, h2, h3, h4, h5, h6 {
-        scroll-margin-top: 160px !important; 
+        scroll-margin-top: 260px !important; 
       }
 
+      /* Changes the nav to a flex column so the button and links never overlap */
       .top-nav {
         position: fixed !important;
         top: 0;
@@ -281,6 +282,7 @@
         border-bottom: 1px solid var(--border) !important;
       }
 
+      /* Places the button naturally above the links so it is fully clickable */
       .theme-switch-container {
         position: relative !important;
         top: auto !important;
@@ -292,12 +294,11 @@
         box-shadow: none !important;
         padding: 0 !important;
         z-index: 10000 !important; 
-        cursor: pointer; /* Tells the phone the entire area is tappable */
       }
 
-      /* Reduced from 280px to 170px to bring your name further up */
+      /* Massively increases the top cushion so the tall mobile nav doesn't cover your name */
       .wrapper {
-        margin-top: 170px !important; 
+        margin-top: 280px !important; 
       }
 
       header {
@@ -317,6 +318,7 @@
         padding: 15px 0 !important;
       }
 
+      /* Compacts the links slightly to save screen space */
       .top-nav ul {
         display: flex;
         flex-wrap: wrap;
@@ -333,6 +335,7 @@
         font-size: 14px !important;
       }
 
+      /* Ensures images do not stretch past the mobile screen */
       img {
         max-width: 100% !important;
         height: auto !important;
@@ -349,6 +352,7 @@
     <!-- THE SINGLE, CORRECT TOGGLE BUTTON -->
     <div class="theme-switch-container">
       <span aria-hidden="true">☀️</span>
+      <!-- Added for="themeToggle" to force mobile screens to register the tap -->
       <label class="theme-switch" for="themeToggle" aria-label="Toggle dark mode">
         <input type="checkbox" id="themeToggle">
         <span class="slider"></span>
@@ -356,7 +360,6 @@
       <span aria-hidden="true">🌙</span>
       <span id="themeStatus" class="theme-label">Light</span>
     </div>
-
     <!-- YOUR LINKS -->
     <ul>
       <li><a href="#about-me">About Me</a></li>
