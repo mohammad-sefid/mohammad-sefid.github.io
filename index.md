@@ -54,6 +54,28 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
 
 <h2 id="updates">Updates</h2>
 
+<!-- PASTE THIS NEW UPDATE RIGHT BELOW YOUR HEADING -->
+<div style="margin-bottom: 30px;">
+  <p>
+    <strong>September 2026</strong> — I successfully defended my Master's thesis, which focused on Sum rate improvement of RIS assisted ISAC systems using C-NOMA from Energy Harvesting through SWIPT. During my presentation, I detailed the optimization algorithms I developed for wireless beamforming and sum rate maximization, leveraging Classical method, Metaheuristic algorithms and DRL techniques. 
+  </p>
+  <p>
+    This defense was a tremendous milestone, and I am deeply grateful to supervisor, the thesis jury members and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
+  </p>
+  
+  <!-- IMAGE CAROUSEL -->
+  <div class="carousel-container">
+    <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous image">&#10094;</button>
+    <div class="carousel-track">
+      <!-- Replace these placeholder src attributes with your actual image paths -->
+      <img src="images/defense-presentation.jpg" alt="Presenting my Master's thesis">
+      <img src="images/defense-professors.jpg" alt="Standing with my professors and supervisors">
+      <img src="images/defense-friends.jpg" alt="Celebrating the successful defense with friends">
+    </div>
+    <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next image">&#10095;</button>
+  </div>
+</div>
+
 <!-- Centers the image and adds a slight curve to the corners -->
 <!--<div style="text-align: center; margin-bottom: 20px;">
   <img src="{{ '/running.jpg' | relative_url }}" alt="Running Experience" style="max-width: 100%; border-radius: 8px;">
