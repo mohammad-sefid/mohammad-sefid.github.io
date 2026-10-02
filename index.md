@@ -57,10 +57,10 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
 <!-- PASTE THIS NEW UPDATE RIGHT BELOW YOUR HEADING -->
 <div style="margin-bottom: 30px;">
   <p>
-    <strong>September 2026</strong> — I successfully defended my Master's thesis, which focused on Sum rate improvement of RIS assisted ISAC systems using C-NOMA from Energy Harvesting through SWIPT. During my presentation, I detailed the optimization algorithms I developed for wireless beamforming and sum rate maximization, leveraging Classical method, Metaheuristic algorithms and DRL techniques. 
+    <strong>June 2026</strong> — I successfully defended my Master's thesis, which focused on Sum rate improvement of RIS assisted ISAC systems using C-NOMA from Energy Harvesting through SWIPT. During my presentation, I detailed the optimization algorithms I developed for wireless beamforming and sum rate maximization, leveraging Classical method, Metaheuristic algorithms and DRL techniques. 
   </p>
   <p>
-    This defense was a tremendous milestone, and I am deeply grateful to supervisor, the thesis jury members and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
+    I am deeply grateful to supervisor, the thesis jury members and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
   </p>
   
   <!-- IMAGE CAROUSEL -->
