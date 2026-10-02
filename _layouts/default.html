@@ -256,6 +256,65 @@
     }
 
   /* =====================================================
+       IMAGE CAROUSEL
+       ===================================================== */
+    .carousel-container {
+      position: relative;
+      max-width: 700px;
+      margin: 20px auto 30px auto;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border: 2px solid var(--border);
+      background-color: var(--card);
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.4s ease-in-out;
+      width: 100%;
+    }
+
+    .carousel-track img {
+      width: 100%;
+      flex-shrink: 0;
+      object-fit: cover;
+      max-height: 450px;
+      display: block;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      font-size: 18px;
+      z-index: 10;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel-btn:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .carousel-btn.prev {
+      left: 15px;
+    }
+
+    .carousel-btn.next {
+      right: 15px;
+    }
+
+  /* =====================================================
        MOBILE RESPONSIVENESS
        ===================================================== */
     @media (max-width: 768px) {
@@ -459,6 +518,33 @@
         toggle.checked = !toggle.checked; // Manually flips the invisible checkbox switch
         applyTheme(toggle.checked ? "dark" : "light");
       });
+    });
+  </script>
+
+  <!-- CAROUSEL JAVASCRIPT -->
+  <script>
+    let currentSlide = 0;
+
+    function moveSlide(direction) {
+      const track = document.querySelector('.carousel-track');
+      const slides = document.querySelectorAll('.carousel-track img');
+      if (!track || slides.length === 0) return;
+
+      const totalSlides = slides.length;
+      
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      
+      const slideWidth = slides[0].clientWidth;
+      track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    }
+
+    window.addEventListener('resize', () => {
+      const track = document.querySelector('.carousel-track');
+      const slides = document.querySelectorAll('.carousel-track img');
+      if (!track || slides.length === 0) return;
+      
+      const slideWidth = slides[0].clientWidth;
+      track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
     });
   </script>
 
