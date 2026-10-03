@@ -64,14 +64,14 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
   </p>
   
   <!-- IMAGE CAROUSEL -->
-  <div class="carousel-container">
+  <!--<div class="carousel-container">
     <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous image">&#10094;</button>
     <div class="carousel-track">
-      <!-- Replace these placeholder src attributes with your actual image paths -->
-      <img src="images/defense-presentation.jpg" alt="Presenting my Master's thesis">
+       Replace these placeholder src attributes with your actual image paths -->
+      <!--<img src="images/defense-presentation.jpg" alt="Presenting my Master's thesis">
       <img src="images/defense-professors.jpg" alt="Standing with my professors and supervisors">
       <img src="images/defense-friends.jpg" alt="Celebrating the successful defense with friends">
-    </div>
+    </div>-->
     <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next image">&#10095;</button>
   </div>
 </div>
