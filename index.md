@@ -71,10 +71,10 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
       <!--<img src="images/defense-presentation.jpg" alt="Presenting my Master's thesis">
       <img src="images/defense-professors.jpg" alt="Standing with my professors and supervisors">
       <img src="images/defense-friends.jpg" alt="Celebrating the successful defense with friends">
-    </div>-->
+    </div>
     <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next image">&#10095;</button>
-  </div>
-</div>
+  </div> 
+</div> 
 
 <!-- Centers the image and adds a slight curve to the corners -->
 <!--<div style="text-align: center; margin-bottom: 20px;">
