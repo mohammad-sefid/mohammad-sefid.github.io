@@ -52,36 +52,56 @@ IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-D
 Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems".
 </p>
 
-<h2 id="updates">Updates</h2>
-
-<!-- PASTE THIS NEW UPDATE RIGHT BELOW YOUR HEADING -->
-<div style="margin-bottom: 30px;">
-  <p>
-    <strong>June 2026</strong> — I successfully defended my Master's thesis, which focused on Sum rate improvement of RIS assisted ISAC systems using C-NOMA from Energy Harvesting through SWIPT. During my presentation, I detailed the optimization algorithms I developed for wireless beamforming and sum rate maximization, leveraging Classical method, Metaheuristic algorithms and DRL techniques. 
-  </p>
-  <p>
-    I am deeply grateful to supervisor, the thesis jury members and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
-  </p>
+<section id="updates">
+  <h2 id="updates">Updates</h2>
   
-  <!-- IMAGE CAROUSEL -->
-  <!--<div class="carousel-container">
-    <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous image">&#10094;</button>
-    <div class="carousel-track">
-       Replace these placeholder src attributes with your actual image paths -->
-      <!--<img src="images/defense-presentation.jpg" alt="Presenting my Master's thesis">
-      <img src="images/defense-professors.jpg" alt="Standing with my professors and supervisors">
-      <img src="images/defense-friends.jpg" alt="Celebrating the successful defense with friends">
+  <div class="timeline-container">
+    
+    <!-- UPDATE 1: TERRY FOX RUN (September 2026) -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">September 2026</div>
+      <div class="timeline-content">
+        <!-- Centers the image and adds a slight curve to the corners -->
+        <!--
+        <div style="text-align: center; margin-bottom: 20px;">
+          <img src="{{ '/running.jpg' | relative_url }}" alt="Running Experience" style="max-width: 100%; border-radius: 8px;">
+        </div>
+        -->
+        <p>
+          I ran about 9.3 km (around Stanley Park) with average 5:40 minutes/km in 52 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist named <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a> which died due to bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research. 
+        </p>
+        <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="20260088593" data-style="standard" data-from-embed="false" data-token="ySV9_IbvfrmKWi1c-SkP_be-xB43lYxM6QKE7-p8ME4"></div>
+        <script src="https://strava-embeds.com/embed.js"></script>
+      </div>
     </div>
-    <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next image">&#10095;</button>
-  </div> 
-</div> 
 
-<!-- Centers the image and adds a slight curve to the corners -->
-<!--<div style="text-align: center; margin-bottom: 20px;">
-  <img src="{{ '/running.jpg' | relative_url }}" alt="Running Experience" style="max-width: 100%; border-radius: 8px;">
-</div>-->
+    <!-- UPDATE 2: MASTER'S DEFENSE (June 2026) -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">June 2026</div>
+      <div class="timeline-content">
+        <p>
+          I successfully defended my Master's thesis, which focused on Sum rate improvement of RIS assisted ISAC systems using C-NOMA from Energy Harvesting through SWIPT. During my presentation, I detailed the optimization algorithms I developed for wireless beamforming and sum rate maximization, leveraging Classical method, Metaheuristic algorithms and DRL techniques. 
+        </p>
+        <p>
+          I am deeply grateful to supervisor, the thesis jury members and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
+        </p>
+        
+        <!-- IMAGE CAROUSEL -->
+        <!--
+        <div class="carousel-container">
+          <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous image">&#10094;</button>
+          <div class="carousel-track">
+            <img src="images/defense-presentation.jpg" alt="Presenting my Master's thesis">
+            <img src="images/defense-professors.jpg" alt="Standing with my professors and supervisors">
+            <img src="images/defense-friends.jpg" alt="Celebrating the successful defense with friends">
+          </div>
+          <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next image">&#10095;</button>
+        </div>
+        -->
+      </div>
+    </div>
 
-<p>
-<strong>September 2026</strong> — I ran about 9.3 km (around Stanley Park) with average 5:40 minutes/km in 52 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist named <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a> which died due to bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research. 
-<div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="20260088593" data-style="standard" data-from-embed="false" data-token="ySV9_IbvfrmKWi1c-SkP_be-xB43lYxM6QKE7-p8ME4"></div><script src="https://strava-embeds.com/embed.js"></script>
-</p>
+  </div>
+</section>
