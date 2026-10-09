@@ -86,8 +86,12 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
         </p>
         <p>You can browse through my thesis defense presentation slides below:</p>
         
-<div class="carousel-container">
-          <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
+<!-- VISUAL 3-PAGE SLIDES CAROUSEL -->
+<p style="font-weight: 600; margin-top: 15px; color: var(--heading);">Presentation Slides:</p>
+        
+  <div class="carousel-container" data-current-slide="0">
+          <!-- Pass 'this' to scope the click to this specific carousel -->
+          <button class="carousel-btn prev" onclick="moveSlide(-1, this)" aria-label="Previous slide" style="display: none;">&#10094;</button>
           <div class="carousel-track">
             <!-- Slide 1 -->
             <img src="{{ '/Slide1.PNG' | relative_url }}" alt="Thesis Presentation Slide 1">
@@ -96,7 +100,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
             <!-- Slide 3 -->
             <img src="{{ '/Slide3.PNG' | relative_url }}" alt="Thesis Presentation Slide 3">
           </div>
-          <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
+          <button class="carousel-btn next" onclick="moveSlide(1, this)" aria-label="Next slide">&#10095;</button>
         </div>
 
  <p>
