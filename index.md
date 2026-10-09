@@ -93,8 +93,8 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
           <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
           <!-- TEMPORARY TEST: Standard Image Display -->
         <div style="text-align: center; margin: 20px 0;">
-          <img src="{{ '/Slide1.png' | relative_url }}" alt="Thesis Presentation Slide 1" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border);">
-          <img src="{{ '/Slide2.png' | relative_url }}" alt="Thesis Presentation Slide 2" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border); margin-top: 15px;">
+          <img src="{{ '/Slide1.PNG' | relative_url }}" alt="Thesis Presentation Slide 1" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border);">
+          <img src="{{ '/Slide2.PNG' | relative_url }}" alt="Thesis Presentation Slide 2" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border); margin-top: 15px;">
         </div>
           <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
         </div>
