@@ -84,6 +84,22 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
         <p>
           I successfully defended my Master's thesis, which focused on Sum rate Maximization of RIS-assisted ISAC systems using C-NOMA from Energy Harvesting via SWIPT. During my presentation, I applied the optimization algorithms that I developed to maximize sum rate, including Alternating Optimization, Metaheuristic algorithms and DRL techniques. 
         </p>
+        <p>You can browse through my thesis defense presentation slides below:</p>
+
+        <!-- VISUAL 2-PAGE SLIDES CAROUSEL -->
+        <p style="font-weight: 600; margin-top: 15px; color: var(--heading);">Presentation Slides:</p>
+        
+        <div class="carousel-container" style="max-width: 650px; margin: 15px auto;">
+          <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
+          <div class="carousel-track">
+            <!-- Slide 1 -->
+            <img src="{{ '/images/slide1.png' | relative_url }}" alt="Thesis Presentation Slide 1">
+            <!-- Slide 2 -->
+            <img src="{{ '/images/slide2.png' | relative_url }}" alt="Thesis Presentation Slide 2">
+          </div>
+          <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
+        </div>
+
         <p>
           I am deeply grateful to supervisor, the thesis jury members and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
         </p>
