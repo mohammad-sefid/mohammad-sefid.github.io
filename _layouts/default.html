@@ -158,7 +158,13 @@
       text-align: center;
       z-index: 998;
       box-sizing: border-box;
-      transition: background-color 0.3s ease;
+      /* We added 'transform' here for the slide animation */
+      transition: background-color 0.3s ease, transform 0.3s ease; 
+    }
+
+    /* ADD THIS NEW CLASS: This pushes the navbar out of view when scrolling down */
+    .top-nav.nav-hidden {
+      transform: translateY(-100%);
     }
 
     .theme-switch-container {
@@ -404,7 +410,9 @@
       }
 
       .wrapper {
-        margin-top: 280px !important; 
+        /* Adjusted top margin and added left/right padding for mobile spaces */
+        margin-top: 250px !important; 
+        padding: 0 15px !important; 
       }
 
       header {
@@ -421,7 +429,8 @@
         width: 100% !important;
         float: none !important;
         margin-left: 0 !important;
-        padding: 15px 0 !important;
+        /* Added vertical and horizontal spaces inside sections */
+        padding: 25px 10px !important; 
       }
 
       .top-nav ul {
@@ -598,6 +607,28 @@
       
       const slideWidth = slides[0].clientWidth;
       track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    });
+  </script>
+
+  <!-- SMART NAVBAR (HIDE ON SCROLL DOWN) -->
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.top-nav');
+
+    window.addEventListener('scroll', function() {
+      // Get current scroll position
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // If scrolling down AND past the top 100 pixels, hide the nav
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        navbar.classList.add('nav-hidden');
+      } else {
+        // If scrolling up, show the nav again
+        navbar.classList.remove('nav-hidden');
+      }
+      
+      // Update the last scroll position
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile negative scrolling
     });
   </script>
 
