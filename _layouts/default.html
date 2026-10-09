@@ -680,15 +680,19 @@
   </script>
 
   <script>
-  let currentSlide = 0;
-
-  function moveSlide(direction) {
-    const track = document.querySelector('.carousel-track');
-    if (!track) return;
+  function moveSlide(direction, buttonElement) {
+    // Find the specific carousel container this button belongs to
+    const container = buttonElement.closest('.carousel-container');
+    if (!container) return;
+    
+    const track = container.querySelector('.carousel-track');
     const slides = track.querySelectorAll('img');
     const totalSlides = slides.length;
     
-    // Boundary check to stop at edges and prevent empty space
+    // Get current slide index stored on this container (default to 0)
+    let currentSlide = parseInt(container.dataset.currentSlide || '0', 10);
+    
+    // Update index safely within strict boundaries
     currentSlide += direction;
     if (currentSlide < 0) {
       currentSlide = 0;
@@ -696,36 +700,23 @@
       currentSlide = totalSlides - 1;
     }
     
-    // Translate the track horizontally
+    // Save updated index back to the container dataset
+    container.dataset.currentSlide = currentSlide;
+    
+    // Translate the track
     track.style.transform = `translateX(-${currentSlide * 100}%)`;
     
-    // Update button states
-    updateButtonStates();
-  }
-
-  function updateButtonStates() {
-    const track = document.querySelector('.carousel-track');
-    if (!track) return;
-    const totalSlides = track.querySelectorAll('img').length;
-    
-    const prevBtn = document.querySelector('.carousel-btn.prev');
-    const nextBtn = document.querySelector('.carousel-btn.next');
+    // Update button visibility for this specific container
+    const prevBtn = container.querySelector('.carousel-btn.prev');
+    const nextBtn = container.querySelector('.carousel-btn.next');
     
     if (prevBtn) {
-      // Hide left arrow on the first slide
       prevBtn.style.display = currentSlide === 0 ? 'none' : 'block';
     }
-    
     if (nextBtn) {
-      // Hide right arrow on the last slide
       nextBtn.style.display = currentSlide === totalSlides - 1 ? 'none' : 'block';
     }
   }
-
-  // Initialize button visibility on load
-  document.addEventListener('DOMContentLoaded', () => {
-    updateButtonStates();
-  });
 </script>
 
 </body>
