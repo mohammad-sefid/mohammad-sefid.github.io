@@ -86,15 +86,15 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
         </p>
         <p>You can browse through my thesis defense presentation slides below:</p>
         
-<div class="carousel-container" style="max-width: 650px; margin: 15px auto; position: relative; overflow: hidden; border-radius: 8px; border: 1px solid var(--border);">
+<div class="carousel-container">
           <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
-          <div class="carousel-track" style="display: flex; transition: transform 0.3s ease-in-out;">
+          <div class="carousel-track">
             <!-- Slide 1 -->
-            <img src="{{ '/Slide1.PNG' | relative_url }}" alt="Thesis Presentation Slide 1" style="width: 100%; flex-shrink: 0; object-fit: contain;">
+            <img src="{{ '/Slide1.png' | relative_url }}" alt="Thesis Presentation Slide 1">
             <!-- Slide 2 -->
-            <img src="{{ '/Slide2.PNG' | relative_url }}" alt="Thesis Presentation Slide 2" style="width: 100%; flex-shrink: 0; object-fit: contain;">
+            <img src="{{ '/Slide2.png' | relative_url }}" alt="Thesis Presentation Slide 2">
             <!-- Slide 3 -->
-            <img src="{{ '/Slide3.PNG' | relative_url }}" alt="Thesis Presentation Slide 3" style="width: 100%; flex-shrink: 0; object-fit: contain;">
+            <img src="{{ '/Slide3.png' | relative_url }}" alt="Thesis Presentation Slide 3">
           </div>
           <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
         </div>
