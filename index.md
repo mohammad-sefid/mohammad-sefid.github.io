@@ -65,8 +65,8 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
         <!-- Centers the image and adds a slight curve to the corners -->
         
         <div style="text-align: center; margin-bottom: 20px;">
- <img src="{{ '/running.jpg' | relative_url }}" alt="Running Experience" style="max-width: 100%; border-radius: 8px;">
-        </div>
+ <!--<img src="{{ '/running.jpg' | relative_url }}" alt="Running Experience" style="max-width: 100%; border-radius: 8px;">
+        </div>-->
       
 <p>
           I ran about 9.3 km (around Stanley Park) at an average pace of 5:40/km in 52 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a>, who died of bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research. 
