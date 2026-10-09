@@ -69,7 +69,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
         </div>
         -->
         <p>
-          I ran about 9.3 km (around Stanley Park) with average 5:40 minutes/km in 52 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist named <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a> which died due to bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research. 
+          I ran about 9.3 km (around Stanley Park) with an average of 5:40 minutes/km in 52 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist named <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a>, who died due to bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research. 
         </p>
         <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="20260088593" data-style="standard" data-from-embed="false" data-token="ySV9_IbvfrmKWi1c-SkP_be-xB43lYxM6QKE7-p8ME4"></div>
         <script src="https://strava-embeds.com/embed.js"></script>
@@ -82,7 +82,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
       <div class="timeline-date">June 2026</div>
       <div class="timeline-content">
         <p>
-          I successfully defended my Master's thesis, which focused on Sum rate Maximization of RIS-assisted ISAC systems using C-NOMA from Energy Harvesting via SWIPT. During my presentation, I applied the optimization algorithms that I developed to maximize sum rate, including Alternating Optimization, Metaheuristic algorithms and DRL techniques. 
+          I successfully defended my Master's thesis, which focused on sum-rate maximization of RIS-assisted ISAC systems using C-NOMA from Energy Harvesting via SWIPT. During my presentation, I applied the optimization algorithms that I developed to maximize sum rate, including Alternating Optimization, Metaheuristic algorithms, and DRL techniques. 
         </p>
         <p>You can browse through my thesis defense presentation slides below:</p>
 
@@ -101,7 +101,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
         </div>
 
         <p>
-          I am deeply grateful to supervisor, the thesis jury members and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
+          I am deeply grateful to my supervisor, the thesis committee members, and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
         </p>
         
         <!-- IMAGE CAROUSEL -->
@@ -110,8 +110,8 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
           <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous image">&#10094;</button>
           <div class="carousel-track">
             <img src="images/defense-presentation.jpg" alt="Presenting my Master's thesis">
-            <img src="images/defense-professors.jpg" alt="Standing with my professors and supervisors">
-            <img src="images/defense-friends.jpg" alt="Celebrating the successful defense with friends">
+            <img src="images/defense-professors.jpg" alt=" Standing with my professors and supervisors">
+            <img src="images/defense-friends.jpg" alt=" Celebrating the successful defense with friends">
           </div>
           <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next image">&#10095;</button>
         </div>
