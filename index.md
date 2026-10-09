@@ -90,11 +90,11 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
           <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
           <div class="carousel-track" style="display: flex; transition: transform 0.3s ease-in-out;">
             <!-- Slide 1 -->
-            <img src="{{ '/Slide1.PNG' | relative_url }}" alt="Thesis Presentation Slide 1" style="width: 100%; flex-shrink: 0; object-fit: contain;">
+            <img src="{{ '/Slide1.SVG' | relative_url }}" alt="Thesis Presentation Slide 1" style="width: 100%; flex-shrink: 0; object-fit: contain;">
             <!-- Slide 2 -->
-            <img src="{{ '/Slide2.PNG' | relative_url }}" alt="Thesis Presentation Slide 2" style="width: 100%; flex-shrink: 0; object-fit: contain;">
+            <img src="{{ '/Slide2.SVG' | relative_url }}" alt="Thesis Presentation Slide 2" style="width: 100%; flex-shrink: 0; object-fit: contain;">
             <!-- Slide 3 -->
-            <img src="{{ '/Slide3.PNG' | relative_url }}" alt="Thesis Presentation Slide 3" style="width: 100%; flex-shrink: 0; object-fit: contain;">
+            <img src="{{ '/Slide3.SVG' | relative_url }}" alt="Thesis Presentation Slide 3" style="width: 100%; flex-shrink: 0; object-fit: contain;">
           </div>
           <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
         </div>
