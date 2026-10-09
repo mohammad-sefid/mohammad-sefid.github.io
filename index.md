@@ -69,7 +69,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
         </div>
         -->
         <p>
-          I ran about 9.3 km (around Stanley Park) with an average of 5:40 minutes/km in 52 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist named <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a>, who died due to bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research. 
+          I ran about 9.3 km (around Stanley Park) at an average pace of 5:40/km in 52 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a>, who died of bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research. 
         </p>
         <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="20260088593" data-style="standard" data-from-embed="false" data-token="ySV9_IbvfrmKWi1c-SkP_be-xB43lYxM6QKE7-p8ME4"></div>
         <script src="https://strava-embeds.com/embed.js"></script>
