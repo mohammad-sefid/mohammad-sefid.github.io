@@ -679,6 +679,55 @@
     });
   </script>
 
+  <script>
+  let currentSlide = 0;
+
+  function moveSlide(direction) {
+    const track = document.querySelector('.carousel-track');
+    if (!track) return;
+    const slides = track.querySelectorAll('img');
+    const totalSlides = slides.length;
+    
+    // Boundary check to stop at edges and prevent empty space
+    currentSlide += direction;
+    if (currentSlide < 0) {
+      currentSlide = 0;
+    } else if (currentSlide >= totalSlides) {
+      currentSlide = totalSlides - 1;
+    }
+    
+    // Translate the track horizontally
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+    // Update button states
+    updateButtonStates();
+  }
+
+  function updateButtonStates() {
+    const track = document.querySelector('.carousel-track');
+    if (!track) return;
+    const totalSlides = track.querySelectorAll('img').length;
+    
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    
+    if (prevBtn) {
+      // Hide left arrow on the first slide
+      prevBtn.style.display = currentSlide === 0 ? 'none' : 'block';
+    }
+    
+    if (nextBtn) {
+      // Hide right arrow on the last slide
+      nextBtn.style.display = currentSlide === totalSlides - 1 ? 'none' : 'block';
+    }
+  }
+
+  // Initialize button visibility on load
+  document.addEventListener('DOMContentLoaded', () => {
+    updateButtonStates();
+  });
+</script>
+
 </body>
 
 </html>
