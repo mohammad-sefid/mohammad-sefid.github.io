@@ -58,17 +58,17 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
   <div class="timeline-container">
     
     <!-- UPDATE 1: TERRY FOX RUN (September 2026) -->
-    <div class="timeline-item">
+  <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-date">September 2026</div>
       <div class="timeline-content">
         <!-- Centers the image and adds a slight curve to the corners -->
-        <!--
+        
         <div style="text-align: center; margin-bottom: 20px;">
-          <img src="{{ '/running.jpg' | relative_url }}" alt="Running Experience" style="max-width: 100%; border-radius: 8px;">
+ <img src="{{ '/running.jpg' | relative_url }}" alt="Running Experience" style="max-width: 100%; border-radius: 8px;">
         </div>
-        -->
-        <p>
+      
+<p>
           I ran about 9.3 km (around Stanley Park) at an average pace of 5:40/km in 52 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a>, who died of bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research. 
         </p>
         <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="20260088593" data-style="standard" data-from-embed="false" data-token="ySV9_IbvfrmKWi1c-SkP_be-xB43lYxM6QKE7-p8ME4"></div>
@@ -77,7 +77,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
     </div>
 
     <!-- UPDATE 2: MASTER'S DEFENSE (June 2026) -->
-    <div class="timeline-item">
+<div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-date">June 2026</div>
       <div class="timeline-content">
@@ -86,7 +86,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
         </p>
         <p>You can browse through my thesis defense presentation slides below:</p>
         
-        <div class="carousel-container" style="max-width: 650px; margin: 15px auto; position: relative; overflow: hidden; border-radius: 8px; border: 1px solid var(--border);">
+<div class="carousel-container" style="max-width: 650px; margin: 15px auto; position: relative; overflow: hidden; border-radius: 8px; border: 1px solid var(--border);">
           <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
           <div class="carousel-track" style="display: flex; transition: transform 0.3s ease-in-out;">
             <!-- Slide 1 -->
@@ -99,13 +99,12 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
           <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
         </div>
 
-        <p>
+ <p>
           I am deeply grateful to my supervisor, the thesis committee members, and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
         </p>
         
         <!-- IMAGE CAROUSEL -->
-        <!--
-        <div class="carousel-container">
+  <div class="carousel-container">
           <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous image">&#10094;</button>
           <div class="carousel-track">
             <img src="images/defense-presentation.jpg" alt="Presenting my Master's thesis">
