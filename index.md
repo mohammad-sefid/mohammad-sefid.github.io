@@ -93,9 +93,9 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
           <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
           <div class="carousel-track">
             <!-- Slide 1 -->
-            <img src="{{ '/images/slide1.png' | relative_url }}" alt="Thesis Presentation Slide 1">
+            <img src="{{ '/images/slide1.PNG' | relative_url }}" alt="Thesis Presentation Slide 1">
             <!-- Slide 2 -->
-            <img src="{{ '/images/slide2.png' | relative_url }}" alt="Thesis Presentation Slide 2">
+            <img src="{{ '/images/slide2.PNG' | relative_url }}" alt="Thesis Presentation Slide 2">
           </div>
           <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
         </div>
