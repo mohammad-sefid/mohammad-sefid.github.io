@@ -89,13 +89,14 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
         <!-- VISUAL 2-PAGE SLIDES CAROUSEL -->
         <p style="font-weight: 600; margin-top: 15px; color: var(--heading);">Presentation Slides:</p>
         
-        <div class="carousel-container" style="max-width: 650px; margin: 15px auto;">
+        <div class="carousel-container" style="max-width: 650px; margin: 15px auto; position: relative; overflow: hidden; border-radius: 8px; border: 1px solid var(--border);">
           <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
-          <!-- TEMPORARY TEST: Standard Image Display -->
-        <div style="text-align: center; margin: 20px 0;">
-          <img src="{{ '/Slide1.PNG' | relative_url }}" alt="Thesis Presentation Slide 1" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border);">
-          <img src="{{ '/Slide2.PNG' | relative_url }}" alt="Thesis Presentation Slide 2" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border); margin-top: 15px;">
-        </div>
+          <div class="carousel-track" style="display: flex; transition: transform 0.3s ease-in-out;">
+            <!-- Slide 1 -->
+            <img src="{{ '/Slide1.PNG' | relative_url }}" alt="Thesis Presentation Slide 1" style="width: 100%; flex-shrink: 0; object-fit: contain;">
+            <!-- Slide 2 -->
+            <img src="{{ '/Slide2.PNG' | relative_url }}" alt="Thesis Presentation Slide 2" style="width: 100%; flex-shrink: 0; object-fit: contain;">
+          </div>
           <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
         </div>
 
