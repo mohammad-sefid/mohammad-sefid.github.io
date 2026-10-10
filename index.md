@@ -87,7 +87,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
         <p>You can see my thesis abstract below:</p>
         
 <!-- VISUAL 3-PAGE SLIDES CAROUSEL -->
-<p style="font-weight: 600; margin-top: 15px; color: var(--heading);">Presentation Slides:</p>
+<!--<p style="font-weight: 600; margin-top: 15px; color: var(--heading);">Presentation Slides:</p>-->
         
   <div class="carousel-container" data-current-slide="0">
           <!-- Pass 'this' to scope the click to this specific carousel -->
