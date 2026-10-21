@@ -41,7 +41,7 @@ IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-D
 <h2 id="technical-skills">Technical Skills</h2>
 
 <ul>
-  <li style="text-align: justify;">Programming: MATLAB, Python</li>
+  <li style="text-align: justify;">Programming: Python, MATLAB</li>
   <li style="text-align: justify;">Writing tool: LaTeX, Microsoft Word</li>
   <li style="text-align: justify;">Tools: GitHub, Visio</li>
 </ul>
