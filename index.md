@@ -6,117 +6,83 @@ layout: default
   <img src="{{ '/photo_2026-08-17_05-40-39.jpg' | relative_url }}"
        alt="Mohammad Sefid">
 </div>
-
 <h2 id="about-me">About Me</h2>
-
 <p style="text-align: justify;">
 I am a Communication Systems graduate with a Master's degree in Electrical and Electronics Engineering from Khaje Nasir Toosi University of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperative NOMA systems for Integrated Sensing and Communication (ISAC), with an emphasis on Simultaneous Wireless Information and Power Transfer (SWIPT), energy harvesting, and optimization-based resource allocation.
 </p>
-
 <h2 id="research-interests">Research Interests</h2>
-
 <ul>
-  <li style="text-align: justify;">Joint Optimization of Integrated Communication and Sensing (ISAC) Performance in Next-Generation Wireless Networks</li>
-  <li style="text-align: justify;">Optimization of Reconfigurable Intelligent Surfaces (RIS) to Enhance Beamforming of Wireless Signals</li>
-  <li style="text-align: justify;">Simultaneous Wireless Information and Power Transfer (SWIPT) for Cooperative Non-Orthogonal Multiple Access (C-NOMA) Systems</li>
-  <li style="text-align: justify;">Deep Reinforcement Learning (DRL), Classic and Metaheuristic Optimization for Wireless Systems</li>
+  <li style="text-align: justify; margin-bottom: 12px;"><strong>Joint Optimization of Integrated Communication and Sensing (ISAC) Performance in Next-Generation Wireless Networks</strong><br>
+  My thesis focus: maximizing the communication sum-rate of RIS-assisted ISAC systems while maintaining sensing performance, by jointly designing beamforming and resource allocation.</li>
+  <li style="text-align: justify; margin-bottom: 12px;"><strong>Optimization of Reconfigurable Intelligent Surfaces (RIS) to Enhance Beamforming of Wireless Signals</strong><br>
+  Joint design of RIS phase shifts and transmit beamforming, mainly through alternating optimization, to improve coverage, signal quality, and energy efficiency.</li>
+  <li style="text-align: justify; margin-bottom: 12px;"><strong>Simultaneous Wireless Information and Power Transfer (SWIPT) for Cooperative Non-Orthogonal Multiple Access (C-NOMA) Systems</strong><br>
+  Energy harvesting for cooperative NOMA users via SWIPT. My current manuscript compares half-duplex and full-duplex modes in IRS-assisted cooperative NOMA with SWIPT.</li>
+  <li style="text-align: justify;"><strong>Deep Reinforcement Learning (DRL), Classic and Metaheuristic Optimization for Wireless Systems</strong><br>
+  Applying DRL and metaheuristic methods alongside classical alternating optimization to non-convex resource-allocation problems, with implementations in Python and MATLAB, available on my GitHub.</li>
 </ul>
-
 <h2 id="publications">Publications</h2>
-
 <p style="text-align: justify;">
 IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-Duplex Modes. Mohammad Sefid, Ali H.Bastami, Ali Ahmadi. Manuscript in preparation, 2026.
 </p>
-
 <h2 id="teaching">Teaching</h2>
-
 <ul>
   <li style="text-align: justify;">Numerical Optimization</li>
   <li style="text-align: justify;">Stochastic Processes</li>
   <li style="text-align: justify;">Estimation Theory</li>
   <li style="text-align: justify;">Information Theory</li>
 </ul>
-
 <!-- ID updated to match the navigation link -->
 <h2 id="technical-skills">Technical Skills</h2>
-
 <ul>
   <li style="text-align: justify;">Programming: Python, MATLAB</li>
   <li style="text-align: justify;">Writing tool: LaTeX, Microsoft Word</li>
   <li style="text-align: justify;">Tools: GitHub, Visio</li>
 </ul>
-
 <h2 id="conferences">Conferences</h2>
-
 <p style="text-align: justify;">
-Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems".
+Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems". <a href="{{ '/conference-presentation.pdf' | relative_url }}" target="_blank">View the conference presentation (PDF)</a>.
 </p>
-
 <section id="updates">
   <h2 id="updates">Updates</h2>
-  
   <div class="timeline-container">
-
   <!-- UPDATE 1: TERRY FOX RUN (September 2026) -->
   <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-date">September 2026</div>
       <div class="timeline-content">
         <!-- Centers the image and adds a slight curve to the corners -->
-        
       <div style="text-align: center; margin-bottom: 20px;">
   <img src="{{ '/running.jpg' | relative_url }}" alt="Running Experience" style="max-width: 100%; border-radius: 8px;">
         </div>
-      
 <p>
-          I ran about 9.3 km (around Stanley Park) at an average pace of 5:40/km in 52 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a>, who died of bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research. 
+          I ran about 9.3 km (around Stanley Park) at an average pace of 5:40/km in 52 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a>, who died of bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research.
         </p>
-        
     </div>
-
     <!-- UPDATE 2: MASTER'S DEFENSE (June 2026) -->
 <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-date">June 2026</div>
       <div class="timeline-content">
         <p>
-          I successfully defended my Master's thesis, which focused on sum-rate maximization of RIS-assisted ISAC systems using C-NOMA from Energy Harvesting via SWIPT. During my presentation, I applied the optimization algorithms that I developed to maximize sum rate, including Alternating Optimization, Metaheuristic algorithms, and DRL techniques. 
+          I successfully defended my Master's thesis, which focused on sum-rate maximization of RIS-assisted ISAC systems using C-NOMA from Energy Harvesting via SWIPT. During my presentation, I applied the optimization algorithms that I developed to maximize sum rate, including Alternating Optimization, Metaheuristic algorithms, and DRL techniques.
         </p>
-        <p>You can see my thesis abstract below:</p>
-        
-<!-- VISUAL 3-PAGE SLIDES CAROUSEL -->
-<!--<p style="font-weight: 600; margin-top: 15px; color: var(--heading);">Presentation Slides:</p>-->
-        
-  <div class="carousel-container" data-current-slide="0">
-          <!-- Pass 'this' to scope the click to this specific carousel -->
-          <button class="carousel-btn prev" onclick="moveSlide(-1, this)" aria-label="Previous slide" style="display: none;">&#10094;</button>
-          <div class="carousel-track">
-            <!-- Slide 1 -->
-            <img src="{{ '/Slide1.PNG' | relative_url }}" alt="Thesis Presentation Slide 1">
-            <!-- Slide 2 -->
-            <img src="{{ '/Slide2.PNG' | relative_url }}" alt="Thesis Presentation Slide 2">
-            <!-- Slide 3 -->
-            <img src="{{ '/Slide3.PNG' | relative_url }}" alt="Thesis Presentation Slide 3">
-          </div>
-          <button class="carousel-btn next" onclick="moveSlide(1, this)" aria-label="Next slide">&#10095;</button>
-        </div>
-
+        <p>
+          You can read the abstract of my Master's thesis here: <a href="{{ '/thesis-abstract.pdf' | relative_url }}" target="_blank">Master's Thesis Abstract (PDF)</a>.
+        </p>
  <p>
           I am deeply grateful to my supervisor, the thesis committee members, and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
         </p>
-        
         <!-- IMAGE CAROUSEL -->
   <div class="carousel-container">
-          <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous image">&#10094;</button>
+          <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous image">❮</button>
           <div class="carousel-track">
             <img src="images/defense-presentation.jpg" alt="Presenting my Master's thesis">
             <img src="images/defense-professors.jpg" alt=" Standing with my professors and supervisors">
             <img src="images/defense-friends.jpg" alt=" Celebrating the successful defense with friends">
           </div>
-          <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next image">&#10095;</button>
+          <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next image">❯</button>
         </div>
-        -->
       </div>
     </div>
-
   </div>
