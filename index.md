@@ -8,7 +8,7 @@ layout: default
 </div>
 <h2 id="about-me">About Me</h2>
 <p style="text-align: justify;">
-I am a Communication Systems graduate with a Master's degree in Electrical and Electronics Engineering from Khaje Nasir Toosi University of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperative NOMA systems for Integrated Sensing and Communication (ISAC), with Simultaneous Wireless Information and Power Transfer (SWIPT), energy harvesting, and optimization-based resource allocation.
+I am a Communication Systems graduate with a Master's degree in Electrical and Electronics Engineering from Khaje Nasir Toosi University of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperative NOMA systems in Integrated Sensing and Communication (ISAC), including simultaneous wireless information and Power Transfer (SWIPT).
 </p>
 <h2 id="research-interests">Research Interests</h2>
 <ul>
