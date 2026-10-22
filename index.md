@@ -41,7 +41,7 @@ IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-D
 </ul>
 <h2 id="conferences">Conferences</h2>
 <p style="text-align: justify;">
-Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems". <a href="{{ '/conference-presentation.pptx' | relative_url }}" target="_blank" style="text-decoration: none;"><span style="display: inline-block; padding: 3px 14px; border: 1.5px solid #d24726; border-radius: 999px; background: #fdeee9; color: #d24726; font-weight: 600; font-size: 0.9em;">Presentation</span></a>.
+Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems". <a href="{{ '/conference-presentation.pptx' | relative_url }}" target="_blank" style="text-decoration: none;"><span style="display: inline-block; padding: 3px 14px; border: 1.5px solid #d24726; border-radius: 999px; background: #fdeee9; color: #d24726; font-weight: 600; font-size: 0.9em;">Presentation</span></a>
 </p>
 <section id="updates">
   <h2 id="updates">Updates</h2>
@@ -68,7 +68,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
           I successfully defended my Master's thesis, which focused on sum-rate maximization of RIS-assisted ISAC systems using C-NOMA from Energy Harvesting via SWIPT. During my presentation, I applied the optimization algorithms that I developed to maximize sum rate, including Alternating Optimization, Metaheuristic algorithms, and DRL techniques.
         </p>
         <p>
-          You can read the abstract of my Master's thesis here: <a href="{{ '/thesis-abstract.pptx' | relative_url }}" target="_blank" style="text-decoration: none;"><span style="display: inline-block; padding: 3px 14px; border: 1.5px solid #d24726; border-radius: 999px; background: #fdeee9; color: #d24726; font-weight: 600; font-size: 0.9em;">Abstract</span></a>.
+          You can read the abstract of my Master's thesis here: <a href="{{ '/thesis-abstract.pptx' | relative_url }}" target="_blank" style="text-decoration: none;"><span style="display: inline-block; padding: 3px 14px; border: 1.5px solid #d24726; border-radius: 999px; background: #fdeee9; color: #d24726; font-weight: 600; font-size: 0.9em;">Abstract</span></a>
         </p>
  <p>
           I am deeply grateful to my supervisor, the thesis committee members, and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
