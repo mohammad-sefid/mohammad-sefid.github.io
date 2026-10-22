@@ -41,7 +41,7 @@ IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-D
 </ul>
 <h2 id="conferences">Conferences</h2>
 <p style="text-align: justify;">
-Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems". <a href="{{ '/conference-presentation.pdf' | relative_url }}" target="_blank">View the conference presentation (PDF)</a>.
+Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems". <a href="{{ '/conference-presentation.pptx' | relative_url }}" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fdeee9" stroke="#d24726" stroke-width="2" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 5px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8" fill="none"/></svg>View the conference presentation (PPTX)</a>.
 </p>
 <section id="updates">
   <h2 id="updates">Updates</h2>
@@ -68,7 +68,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
           I successfully defended my Master's thesis, which focused on sum-rate maximization of RIS-assisted ISAC systems using C-NOMA from Energy Harvesting via SWIPT. During my presentation, I applied the optimization algorithms that I developed to maximize sum rate, including Alternating Optimization, Metaheuristic algorithms, and DRL techniques.
         </p>
         <p>
-          You can read the abstract of my Master's thesis here: <a href="{{ '/thesis-abstract.pdf' | relative_url }}" target="_blank">Master's Thesis Abstract (PDF)</a>.
+          You can read the abstract of my Master's thesis here: <a href="{{ '/thesis-abstract.pptx' | relative_url }}" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fdeee9" stroke="#d24726" stroke-width="2" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 5px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8" fill="none"/></svg>Master's Thesis Abstract (PPTX)</a>.
         </p>
  <p>
           I am deeply grateful to my supervisor, the thesis committee members, and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
