@@ -76,7 +76,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
 </p>
 <h2 id="recreational-activities">Recreational Activities</h2>
 <ul>
-  <li style="text-align: justify; margin-bottom: 8px;"><strong>Running:</strong> Half-marathon runner. In September 2026 I ran about 9.3 km around Stanley Park in the Terry Fox Run, at an average pace of 5:40/km in 52 minutes (see Updates below).</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Running:</strong> Half-marathon runner. I ran 21.1 km at Qom Salt Lake in a competition.</li>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Cycling:</strong> Recreational cyclist.</li>
   <li style="text-align: justify;"><strong>Fitness:</strong> Regular workouts.</li>
 </ul>
@@ -93,7 +93,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
   <img src="{{ '/running.jpg' | relative_url }}" alt="Running Experience" style="max-width: 100%; border-radius: 8px;">
         </div>
 <p>
-          I ran about 9.3 km (around Stanley Park) at an average pace of 5:40/km in 52 minutes. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a>, who died of bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research.
+          I ran in the Terry Fox Run in Stanley Park in Vancouver. This event is held every year on 20th September in memory of Canadian athlete and Cancer research activist <a href="https://en.wikipedia.org/wiki/Terry_Fox" target="_blank">Terry Fox</a>, who died of bone cancer. He covered 5,373 km in 143 days, inspiring millions and raising over $24 million. His legacy continues through annual Terry Fox Runs worldwide, raising over $1 billion for cancer research.
         </p>
     </div>
     <!-- UPDATE 2: MASTER'S DEFENSE (June 2026) -->
