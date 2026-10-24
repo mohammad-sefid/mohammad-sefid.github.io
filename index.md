@@ -35,7 +35,7 @@ IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-D
 <h3>Research Experience</h3>
 <ul>
   <li style="text-align: justify;"><strong>Graduate Researcher — RIS-Assisted ISAC Systems, K. N. Toosi University of Technology, Tehran, Iran (2023–2026)</strong><br>
-  Research project: performance improvement of RIS-assisted ISAC systems, using alternating optimization, metaheuristic algorithms, and deep reinforcement learning for joint beamforming and resource allocation. Course and project implementations in Python and MATLAB are available on my GitHub (see Skills).</li>
+  Research project: performance improvement of RIS-assisted ISAC systems, using alternating optimization, metaheuristic algorithms, and deep reinforcement learning for joint beamforming and resource allocation. Course and project implementations in Python and MATLAB are available on my GitHub.</li>
 </ul>
 <h3>Industry Experience</h3>
 <ul>
