@@ -62,8 +62,8 @@ I reviewed and graded the computer-based and theoretical assignments of graduate
 <!-- ID updated to match the navigation link -->
 <h2 id="technical-skills">Skills</h2>
 <ul>
-  <li style="text-align: justify; margin-bottom: 8px;"><strong>Programming:</strong> Python, MATLAB</li>
-  <li style="text-align: justify; margin-bottom: 8px;"><strong>Optimization &amp; Learning:</strong> Alternating optimization, numerical optimization, metaheuristic algorithms, machine learning, deep reinforcement learning (DRL)</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Programming:</strong>C, Python, and MATLAB</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Optimization &amp; Learning:</strong> Alternating optimization, metaheuristic algorithms, deep reinforcement learning (DRL)</li>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Signal Processing:</strong> Digital signal processing (DSP), adaptive filters</li>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Wireless Systems:</strong> Beamforming design, RIS phase-shift optimization, resource allocation</li>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Writing Tools:</strong> LaTeX, Microsoft Word / Microsoft Office</li>
