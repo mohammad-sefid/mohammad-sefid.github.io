@@ -8,7 +8,7 @@ layout: default
 </div>
 <h2 id="about-me">About Me</h2>
 <p style="text-align: justify;">
-I am a Communication Systems graduate with a Master's degree in Electrical and Electronics Engineering from Khaje Nasir Toosi University of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperative NOMA systems in Integrated Sensing and Communication (ISAC), including simultaneous wireless information and Power Transfer (SWIPT).
+I am a Communication Systems graduate with a Master's degree in Electrical and Electronics Engineering from Khaje Nasir Toosi University of Technology (KNTU), Tehran, Iran. My research focuses on RIS-assisted Cooperative NOMA systems with Simultaneous Wireless Information and Power Transfer (SWIPT) for Integrated Sensing and Communication (ISAC).
 </p>
 <h2 id="research-interests">Research Interests</h2>
 <ul>
@@ -25,24 +25,61 @@ I am a Communication Systems graduate with a Master's degree in Electrical and E
 <p style="text-align: justify;">
 IRS-Assisted Cooperative NOMA with SWIPT in ISAC Systems: A Comparison of Half-Duplex and Full-Duplex Modes. Mohammad Sefid, Ali H.Bastami, Ali Ahmadi. Manuscript in preparation, 2026.
 </p>
+<h2 id="education">Education</h2>
+<ul>
+  <li style="text-align: justify; margin-bottom: 12px;"><strong>MSc, Electrical, Electronics and Communications Engineering — K. N. Toosi University of Technology, Tehran, Iran (2023–2026)</strong><br>
+  Thesis: RIS-aided Integrated Sensing and Communication (ISAC) systems with Cooperative NOMA and SWIPT energy harvesting, defended June 2026.<br>
+  Relevant coursework: Machine Learning, Numerical Optimization, Digital Signal Processing, Adaptive Filters.</li>
+</ul>
+<h2 id="experience">Experience</h2>
+<h3>Research Experience</h3>
+<ul>
+  <li style="text-align: justify;"><strong>Graduate Researcher — RIS-Assisted ISAC Systems, K. N. Toosi University of Technology, Tehran, Iran (2023–2026)</strong><br>
+  Research project: performance improvement of RIS-assisted ISAC systems, using alternating optimization, metaheuristic algorithms, and deep reinforcement learning for joint beamforming and resource allocation. Course and project implementations in Python and MATLAB are available on my GitHub (see Skills).</li>
+</ul>
+<h3>Industry Experience</h3>
+<ul>
+  <li style="text-align: justify; margin-bottom: 12px;"><strong>Intern — Manasazan Sadid, Tehran, Iran (Apr–Jun 2021)</strong><br>
+  Gained practical experience in the planning and design of renewable energy power plants; supported the installation of energy systems, including off-grid solar power plants; developed an understanding of installation project management and logistics coordination.</li>
+  <li style="text-align: justify; margin-bottom: 12px;"><strong>Intern — Zamyad Co., Tehran, Iran (Jul–Sep 2018)</strong><br>
+  Developed knowledge of automotive electrical and electronic systems; provided electrical and electronic support for quality control laboratories and manufacturing lines; evaluated safety measures and contributed to the installation of grounding (earthing) systems for technical lines.</li>
+  <li style="text-align: justify;"><strong>Technical Content Creator — Ariosunshade, Tehran, Iran (Sep 2017–Mar 2018)</strong><br>
+  Translated technical energy-related articles from English into Persian and conducted literature reviews to identify state-of-the-art advancements in the energy sector.</li>
+</ul>
 <h2 id="teaching">Teaching</h2>
+<p style="text-align: justify;">
+Teaching Assistant, K. N. Toosi University of Technology, Tehran, Iran (Feb 2025 – Jan 2026), for the following graduate courses:
+</p>
 <ul>
   <li style="text-align: justify;">Numerical Optimization</li>
   <li style="text-align: justify;">Stochastic Processes</li>
   <li style="text-align: justify;">Estimation Theory</li>
   <li style="text-align: justify;">Information Theory</li>
 </ul>
+<p style="text-align: justify;">
+I reviewed and graded the computer-based and theoretical assignments of graduate students, and prepared and provided the correct code and the solution key for the questions.
+</p>
 <!-- ID updated to match the navigation link -->
-<h2 id="technical-skills">Technical Skills</h2>
+<h2 id="technical-skills">Skills</h2>
 <ul>
-  <li style="text-align: justify;">Programming: Python, MATLAB</li>
-  <li style="text-align: justify;">Writing tool: LaTeX, Microsoft Word</li>
-  <li style="text-align: justify;">Tools: GitHub, Visio</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Programming:</strong> Python, MATLAB</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Optimization &amp; Learning:</strong> Alternating optimization, numerical optimization, metaheuristic algorithms, machine learning, deep reinforcement learning (DRL)</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Signal Processing:</strong> Digital signal processing (DSP), adaptive filters</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Wireless Systems:</strong> Beamforming design, RIS phase-shift optimization, resource allocation</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Writing Tools:</strong> LaTeX, Microsoft Word / Microsoft Office</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Tools:</strong> GitHub, Microsoft Visio</li>
+  <li style="text-align: justify;"><strong>Code on GitHub:</strong> <a href="https://github.com/mohammad-sefid/Machine_Learning" target="_blank">Machine Learning</a>, <a href="https://github.com/mohammad-sefid/Numerical-Optimization" target="_blank">Numerical Optimization</a>, <a href="https://github.com/mohammad-sefid/Digital-Signal-Processing" target="_blank">Digital Signal Processing</a>, <a href="https://github.com/mohammad-sefid/Adaptive_filters" target="_blank">Adaptive Filters</a></li>
 </ul>
 <h2 id="conferences">Conferences</h2>
 <p style="text-align: justify;">
-Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems". <a href="{{ '/conference-presentation.pptx' | relative_url }}" target="_blank" style="text-decoration: none;"><span style="display: inline-block; padding: 3px 14px; border: 1.5px solid #d24726; border-radius: 999px; background: #fdeee9; color: #d24726; font-weight: 600; font-size: 0.9em;">Presentation</span></a>
+Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems". <a href="{{ '/conference-presentation.pptx' | relative_url }}" target="_blank" style="text-decoration: none;"><span style="display: inline-block; padding: 3px 14px; border: 1.5px solid #d24726; border-radius: 999px; background: #fdeee9; color: #d24726; font-weight: 600; font-size: 0.9em;">Presentation</span></a>.
 </p>
+<h2 id="recreational-activities">Recreational Activities</h2>
+<ul>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Running:</strong> Half-marathon runner. In September 2026 I ran about 9.3 km around Stanley Park in the Terry Fox Run, at an average pace of 5:40/km in 52 minutes (see Updates below).</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Cycling:</strong> Recreational cyclist.</li>
+  <li style="text-align: justify;"><strong>Fitness:</strong> Regular workouts.</li>
+</ul>
 <section id="updates">
   <h2 id="updates">Updates</h2>
   <div class="timeline-container">
@@ -68,7 +105,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
           I successfully defended my Master's thesis, which focused on sum-rate maximization of RIS-assisted ISAC systems using C-NOMA from Energy Harvesting via SWIPT. During my presentation, I applied the optimization algorithms that I developed to maximize sum rate, including Alternating Optimization, Metaheuristic algorithms, and DRL techniques.
         </p>
         <p>
-          You can read the abstract of my Master's thesis here: <a href="{{ '/Thesis-abstract.pptx' | relative_url }}" target="_blank" style="text-decoration: none;"><span style=" display: inline-block; padding: 3px 14px; border: 1.5px solid #d24726; border-radius: 999px; background: #fdeee9; color: #d24726; font-weight: 600; font-size: 0.9em;">Abstract</span></a>
+          You can read the abstract of my Master's thesis here: <a href="{{ '/Thesis-abstract.pptx' | relative_url }}" target="_blank" style="text-decoration: none;"><span style=" display: inline-block; padding: 3px 14px; border: 1.5px solid #d24726; border-radius: 999px; background: #fdeee9; color: #d24726; font-weight: 600; font-size: 0.9em;">Abstract</span></a>.
         </p>
  <p>
           I am deeply grateful to my supervisor, the thesis committee members, and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
