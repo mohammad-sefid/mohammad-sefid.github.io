@@ -60,7 +60,7 @@ Teaching Assistant, K. N. Toosi University of Technology, Tehran, Iran (Feb 2025
 I reviewed and graded the computer-based and theoretical assignments of graduate students, and prepared and provided the correct code and the solution key for the questions.
 </p>
 <!-- ID updated to match the navigation link -->
-<h2 id="technical-skills">Skills</h2>
+<h2 id="skills">Skills</h2>
 <ul>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Programming:</strong>C, Python, and MATLAB</li>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Optimization &amp; Learning:</strong> Alternating optimization, metaheuristic algorithms, deep reinforcement learning (DRL)</li>
