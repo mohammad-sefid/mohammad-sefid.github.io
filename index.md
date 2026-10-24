@@ -77,8 +77,8 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
 <h2 id="recreational-activities">Recreational Activities</h2>
 <ul>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Running:</strong> Half-marathon runner. I ran 21.1 km at Qom Salt Lake in a competition.</li>
-  <li style="text-align: justify; margin-bottom: 8px;"><strong>Cycling:</strong> Recreational cyclist.</li>
-  <li style="text-align: justify;"><strong>Fitness:</strong> Regular workouts.</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Cycling:</strong> Recreational cyclist</li>
+  <li style="text-align: justify;"><strong>Fitness:</strong> Regular workouts/li>
 </ul>
 <section id="updates">
   <h2 id="updates">Updates</h2>
