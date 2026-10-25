@@ -72,7 +72,7 @@ I reviewed and graded the computer-based and theoretical assignments of graduate
 </ul>
 <h2 id="conferences">Conferences</h2>
 <p style="text-align: justify;">
-Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems". <a href="{{ '/conference-presentation.pptx' | relative_url }}" target="_blank" style="text-decoration: none;"><span style="display: inline-block; padding: 3px 14px; border: 1.5px solid #d24726; border-radius: 999px; background: #fdeee9; color: #d24726; font-weight: 600; font-size: 0.9em;">Presentation</span></a>
+Conference on Electrical and Computer Innovations, K. N. Toosi University of Technology, Feb 2025. Presented my research on "Applications of STAR RIS in Communication Systems" <a href="{{ '/conference-presentation.pptx' | relative_url }}" target="_blank" style="text-decoration: none;"><span style="display: inline-block; padding: 3px 14px; border: 1.5px solid #d24726; border-radius: 999px; background: #fdeee9; color: #d24726; font-weight: 600; font-size: 0.9em;">Presentation</span></a>
 </p>
 <h2 id="recreational-activities">Recreational Activities</h2>
 <ul>
