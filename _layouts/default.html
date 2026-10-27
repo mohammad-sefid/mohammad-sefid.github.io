@@ -249,9 +249,14 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      max-width: calc(100% - 220px);
+      max-width: 100%;
     }
 
+    @media (min-width: 769px) {
+      .top-nav {
+        padding-right: 220px;
+      }
+    }
 
     .top-nav a {
       text-decoration: none;
