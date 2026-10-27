@@ -111,7 +111,7 @@ Conference on Electrical and Computer Innovations, K. N. Toosi University of Tec
           I am deeply grateful to my supervisor, the thesis committee members, and friends who supported me throughout this research journey. Below are a few memorable moments from the day.
         </p>
         <!-- IMAGE CAROUSEL -->
-  <div class="carousel-container">
+  <!--<div class="carousel-container">
           <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous image">❮</button>
           <div class="carousel-track">
             <img src="images/defense-presentation.jpg" alt="Presenting my Master's thesis">
