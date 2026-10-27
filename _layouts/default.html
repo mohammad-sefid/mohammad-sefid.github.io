@@ -82,11 +82,12 @@
       scroll-margin-top: 90px; 
     }
 
-    section h2 {
+    section h2:not(#updates) {
       border-bottom: 2px solid var(--link);
       padding-bottom: 6px;
       margin-bottom: 16px;
     }
+
 
     p, li, strong, em {
       color: var(--text);
@@ -247,8 +248,10 @@
       display: inline-flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 25px;
+      gap: 20px;
+      max-width: calc(100% - 220px);
     }
+
 
     .top-nav a {
       text-decoration: none;
