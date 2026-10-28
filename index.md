@@ -64,10 +64,10 @@ I reviewed and graded the computer-based and theoretical assignments of graduate
 <ul>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Programming:</strong>C, Python, and MATLAB</li>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Optimization &amp; Learning:</strong> Alternating optimization, metaheuristic algorithms, deep reinforcement learning (DRL)</li>
-  <li style="text-align: justify; margin-bottom: 8px;"><strong>Signal Processing:</strong> Digital signal processing (DSP), adaptive filters</li>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Wireless Systems:</strong> Beamforming design, RIS phase-shift optimization, resource allocation</li>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Writing Tools:</strong> LaTeX, Microsoft Word / Microsoft Office</li>
   <li style="text-align: justify; margin-bottom: 8px;"><strong>Tools:</strong> GitHub, Microsoft Visio</li>
+  <li style="text-align: justify; margin-bottom: 8px;"><strong>Signal Processing:</strong> Digital signal processing (DSP), adaptive filters</li>
   <li style="text-align: justify;"><strong>Code on GitHub:</strong> <a href="https://github.com/mohammad-sefid/Machine_Learning" target="_blank">Machine Learning</a>, <a href="https://github.com/mohammad-sefid/Numerical-Optimization" target="_blank">Numerical Optimization</a>, <a href="https://github.com/mohammad-sefid/Digital-Signal-Processing" target="_blank">Digital Signal Processing</a>, <a href="https://github.com/mohammad-sefid/Adaptive_filters" target="_blank">Adaptive Filters</a></li>
 </ul>
 <h2 id="conferences">Conferences</h2>
